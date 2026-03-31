@@ -85,7 +85,7 @@ export default function DayView({ day }: DayViewProps) {
         {/* Video Panel - 70% */}
         <div className="lg:w-[70%] w-full lg:h-full">
           {video ? (
-            <YouTubePlayer videoId={video.videoId} />
+            <YouTubePlayer videoId={video.videoId} title={video.title} />
           ) : (
             <div className="w-full h-full bg-leather-video flex items-center justify-center">
               <p className="text-leather-muted font-sans">
