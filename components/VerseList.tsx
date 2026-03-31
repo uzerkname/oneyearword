@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
-import { Verse } from "@/lib/types";
+import { Verse, Connection } from "@/lib/types";
 
 interface ChapterBlock {
   chapter: number;
@@ -13,6 +13,10 @@ interface VerseListProps {
   bookName: string;
   highlightJesus?: boolean;
   onHasRedLetters?: (has: boolean) => void;
+  connectionVerses?: Map<string, { id: number; color: Connection['color'] }>;
+  activeConnectionId?: number | null;
+  onConnectionHover?: (id: number | null) => void;
+  onConnectionClick?: (id: number, side: 'disc' | 'bible') => void;
 }
 
 interface RedLetterData {
@@ -160,7 +164,34 @@ function generateDivineEffects(groupKey: string) {
   return elements;
 }
 
-function renderVerse(v: Verse, isJesus: boolean) {
+interface ConnectionContext {
+  connectionVerses?: Map<string, { id: number; color: Connection['color'] }>;
+  bookName: string;
+  chapter: number;
+  activeConnectionId?: number | null;
+  onConnectionHover?: (id: number | null) => void;
+  onConnectionClick?: (id: number, side: 'disc' | 'bible') => void;
+}
+
+function renderVerse(v: Verse, isJesus: boolean, connCtx?: ConnectionContext) {
+  const connKey = connCtx ? `${connCtx.bookName}:${connCtx.chapter}:${v.verse}` : null;
+  const conn = connKey && connCtx?.connectionVerses ? connCtx.connectionVerses.get(connKey) : null;
+
+  const textContent = conn && connCtx ? (
+    <span
+      className={`conn-highlight${connCtx.activeConnectionId === conn.id ? " conn-active" : ""}`}
+      data-color={conn.color}
+      data-connection-id={conn.id}
+      data-side="bible"
+      onMouseEnter={() => connCtx.onConnectionHover?.(conn.id)}
+      onMouseLeave={() => connCtx.onConnectionHover?.(null)}
+      onClick={() => connCtx.onConnectionClick?.(conn.id, 'bible')}
+    >
+      <span className="conn-anchor-dot" />
+      {v.text}
+    </span>
+  ) : v.text;
+
   return (
     <p
       key={v.verse}
@@ -171,7 +202,7 @@ function renderVerse(v: Verse, isJesus: boolean) {
       <sup className={`font-sans text-xs mr-1 select-none ${isJesus ? "" : "text-leather-muted"}`}>
         {v.verse}
       </sup>
-      {v.text}
+      {textContent}
     </p>
   );
 }
@@ -181,7 +212,8 @@ function groupVerses(
   redLetters: RedLetterData,
   bookName: string,
   chapter: number,
-  highlightJesus: boolean
+  highlightJesus: boolean,
+  connCtx?: ConnectionContext
 ) {
   const elements: React.ReactNode[] = [];
   let jesusRun: Verse[] = [];
@@ -192,11 +224,11 @@ function groupVerses(
       const groupKey = `jesus-${chapter}-${jesusRun[0].verse}`;
       elements.push(
         <DivineGroup key={groupKey} groupKey={groupKey}>
-          {jesusRun.map((v) => renderVerse(v, true))}
+          {jesusRun.map((v) => renderVerse(v, true, connCtx))}
         </DivineGroup>
       );
     } else {
-      jesusRun.forEach((v) => elements.push(renderVerse(v, false)));
+      jesusRun.forEach((v) => elements.push(renderVerse(v, false, connCtx)));
     }
     jesusRun = [];
   }
@@ -207,7 +239,7 @@ function groupVerses(
       jesusRun.push(v);
     } else {
       flushRun();
-      elements.push(renderVerse(v, false));
+      elements.push(renderVerse(v, false, connCtx));
     }
   }
   flushRun();
@@ -258,7 +290,16 @@ function DivineGroup({
   );
 }
 
-export default function VerseList({ chapters, bookName, highlightJesus = true, onHasRedLetters }: VerseListProps) {
+export default function VerseList({
+  chapters,
+  bookName,
+  highlightJesus = true,
+  onHasRedLetters,
+  connectionVerses,
+  activeConnectionId,
+  onConnectionHover,
+  onConnectionClick,
+}: VerseListProps) {
   const [redLetters, setRedLetters] = useState<RedLetterData>({});
 
   useEffect(() => {
@@ -276,16 +317,29 @@ export default function VerseList({ chapters, bookName, highlightJesus = true, o
 
   return (
     <div className="px-4 py-3 font-serif">
-      {chapters.map((ch, idx) => (
-        <div key={ch.chapter}>
-          {(chapters.length > 1 || idx === 0) && (
-            <h3 className="text-leather-accent font-bold text-sm font-sans mb-3 mt-2 first:mt-0 sticky top-0 bg-leather-text py-1">
-              {bookName} {ch.chapter}
-            </h3>
-          )}
-          {groupVerses(ch.verses, redLetters, bookName, ch.chapter, highlightJesus)}
-        </div>
-      ))}
+      {chapters.map((ch, idx) => {
+        const connCtx: ConnectionContext | undefined =
+          connectionVerses
+            ? {
+                connectionVerses,
+                bookName,
+                chapter: ch.chapter,
+                activeConnectionId,
+                onConnectionHover,
+                onConnectionClick,
+              }
+            : undefined;
+        return (
+          <div key={ch.chapter}>
+            {(chapters.length > 1 || idx === 0) && (
+              <h3 className="text-leather-accent font-bold text-sm font-sans mb-3 mt-2 first:mt-0 sticky top-0 bg-leather-text py-1">
+                {bookName} {ch.chapter}
+              </h3>
+            )}
+            {groupVerses(ch.verses, redLetters, bookName, ch.chapter, highlightJesus, connCtx)}
+          </div>
+        );
+      })}
     </div>
   );
 }

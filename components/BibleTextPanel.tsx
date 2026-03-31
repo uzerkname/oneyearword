@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
-import { Reading, Verse } from "@/lib/types";
+import { Reading, Verse, Connection } from "@/lib/types";
 import { getBookData, getChapterVerses } from "@/lib/bible-text";
 import ReadingTabs from "./ReadingTabs";
 import VerseList from "./VerseList";
@@ -9,6 +9,13 @@ import VerseList from "./VerseList";
 interface BibleTextPanelProps {
   readings: Reading[];
   day: number;
+  connectionVerses?: Map<string, { id: number; color: Connection['color'] }>;
+  activeConnectionId?: number | null;
+  onConnectionHover?: (id: number | null) => void;
+  onConnectionClick?: (id: number, side: 'disc' | 'bible') => void;
+  scrollRef?: React.RefObject<HTMLDivElement | null>;
+  setActiveTab?: (index: number) => void;
+  onActiveTabChange?: (index: number) => void;
 }
 
 interface ChapterBlock {
@@ -16,14 +23,30 @@ interface ChapterBlock {
   verses: Verse[];
 }
 
-export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
+export default function BibleTextPanel({
+  readings,
+  day,
+  connectionVerses,
+  activeConnectionId,
+  onConnectionHover,
+  onConnectionClick,
+  scrollRef: propScrollRef,
+  setActiveTab,
+  onActiveTabChange,
+}: BibleTextPanelProps) {
+  const [activeIndex, setActiveIndexState] = useState(0);
   const [chapters, setChapters] = useState<ChapterBlock[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const internalRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = propScrollRef ?? internalRef;
   const [highlightJesus, setHighlightJesus] = useState(true);
   const [hasRedLetters, setHasRedLetters] = useState(false);
+
+  const setActiveIndex = useCallback((index: number) => {
+    setActiveIndexState(index);
+    setActiveTab?.(index);
+  }, [setActiveTab]);
 
   const onHasRedLetters = useCallback((has: boolean) => {
     setHasRedLetters(has);
@@ -75,8 +98,13 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
 
   // Scroll to top when tab changes
   useEffect(() => {
-    scrollRef.current?.scrollTo(0, 0);
+    scrollContainerRef.current?.scrollTo(0, 0);
   }, [activeIndex, chapters]);
+
+  // Notify parent when active tab changes
+  useEffect(() => {
+    onActiveTabChange?.(activeIndex);
+  }, [activeIndex, onActiveTabChange]);
 
   const activeReading = readings[activeIndex];
 
@@ -111,7 +139,7 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
           </button>
         )}
       </div>
-      <div ref={scrollRef} className="flex-1 overflow-y-auto">
+      <div ref={scrollContainerRef} className="flex-1 overflow-y-auto">
         {loading && (
           <div className="p-4 space-y-2">
             {[75, 60, 85, 70, 90, 65, 80, 55].map((w, i) => (
@@ -132,6 +160,10 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
             bookName={activeReading.book}
             highlightJesus={highlightJesus}
             onHasRedLetters={onHasRedLetters}
+            connectionVerses={connectionVerses}
+            activeConnectionId={activeConnectionId}
+            onConnectionHover={onConnectionHover}
+            onConnectionClick={onConnectionClick}
           />
         )}
       </div>
