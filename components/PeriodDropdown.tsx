@@ -1,30 +1,40 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { PERIODS, getPeriodForDay } from "@/lib/constants";
+import { useState } from "react";
+import { getPeriodForDay } from "@/lib/constants";
+import DayCalendar from "./DayCalendar";
 
 interface PeriodDropdownProps {
   day: number;
 }
 
 export default function PeriodDropdown({ day }: PeriodDropdownProps) {
-  const router = useRouter();
+  const [calendarOpen, setCalendarOpen] = useState(false);
   const currentPeriod = getPeriodForDay(day);
 
   return (
-    <select
-      value={currentPeriod?.periodIndex ?? 0}
-      onChange={(e) => {
-        const period = PERIODS[parseInt(e.target.value, 10)];
-        if (period) router.push(`/day/${period.startDay}`);
-      }}
-      className="bg-leather-border/50 text-leather-accent text-xs font-sans border border-leather-border rounded px-2 py-1 outline-none cursor-pointer hover:bg-leather-border transition-colors"
-    >
-      {PERIODS.map((p) => (
-        <option key={p.periodIndex} value={p.periodIndex}>
-          {p.name} ({p.startDay}-{p.endDay})
-        </option>
-      ))}
-    </select>
+    <>
+      <button
+        onClick={() => setCalendarOpen(true)}
+        className="bg-leather-border/50 text-leather-accent text-xs font-sans border border-leather-border rounded px-2 py-1 cursor-pointer hover:bg-leather-border transition-colors flex items-center gap-1.5"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          className="w-3.5 h-3.5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z"
+            clipRule="evenodd"
+          />
+        </svg>
+        {currentPeriod?.name ?? "Reading Plan"}
+      </button>
+      {calendarOpen && (
+        <DayCalendar day={day} onClose={() => setCalendarOpen(false)} />
+      )}
+    </>
   );
 }

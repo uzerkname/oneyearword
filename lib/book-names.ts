@@ -81,11 +81,11 @@ export function abbreviateBook(name: string): string {
 }
 
 export function readingLabel(reading: Reading): string {
-  const abbr = abbreviateBook(reading.book);
+  const name = reading.book;
   const chapters = reading.chapters;
 
-  if (chapters.length === 0) return abbr;
-  if (chapters.length === 1) return `${abbr} ${chapters[0]}`;
+  if (chapters.length === 0) return name;
+  if (chapters.length === 1) return `${name} ${chapters[0]}`;
 
   // Check if consecutive
   const isConsecutive = chapters.every(
@@ -93,8 +93,8 @@ export function readingLabel(reading: Reading): string {
   );
 
   if (isConsecutive) {
-    return `${abbr} ${chapters[0]}-${chapters[chapters.length - 1]}`;
+    return `${name} ${chapters[0]}-${chapters[chapters.length - 1]}`;
   }
 
-  return `${abbr} ${chapters.join(", ")}`;
+  return `${name} ${chapters.join(", ")}`;
 }
