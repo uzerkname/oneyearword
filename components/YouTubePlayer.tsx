@@ -5,9 +5,19 @@ interface YouTubePlayerProps {
   title?: string;
 }
 
+const YOUTUBE_VIDEO_ID_PATTERN = /^[a-zA-Z0-9_-]{11}$/;
+
 export default function YouTubePlayer({ videoId, title }: YouTubePlayerProps) {
-  const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  if (!YOUTUBE_VIDEO_ID_PATTERN.test(videoId)) {
+    return (
+      <div className="w-full h-full bg-leather-video flex items-center justify-center">
+        <p className="text-leather-muted font-sans">Invalid video</p>
+      </div>
+    );
+  }
+
+  const youtubeUrl = `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+  const thumbnailUrl = `https://img.youtube.com/vi/${encodeURIComponent(videoId)}/maxresdefault.jpg`;
 
   return (
     <div className="w-full h-full bg-leather-video flex items-center justify-center p-6 lg:p-12">

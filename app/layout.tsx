@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   title: "Bible in a Year",
   description:
     "Follow along with Fr. Mike Schmitz's Bible in a Year series with synchronized Bible text",
+  other: {
+    "Content-Security-Policy":
+      "default-src 'self'; " +
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " +
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+      "font-src 'self' https://fonts.gstatic.com; " +
+      "img-src 'self' https://img.youtube.com https://i.scdn.co data:; " +
+      "frame-src https://open.spotify.com; " +
+      "connect-src 'self'; " +
+      "media-src 'none';",
+  },
 };
 
 export default function RootLayout({

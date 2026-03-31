@@ -27,6 +27,12 @@ export async function getBookData(
     return undefined;
   }
 
+  const SAFE_SLUG_PATTERN = /^[a-z0-9-]+$/;
+  if (!SAFE_SLUG_PATTERN.test(entry.slug)) {
+    console.warn(`Invalid book slug: ${entry.slug}`);
+    return undefined;
+  }
+
   const res = await fetch(`/data/bible/${entry.slug}.json`);
   if (!res.ok) {
     console.warn(`Failed to fetch book: ${entry.slug}`);

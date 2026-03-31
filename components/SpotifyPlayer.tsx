@@ -7,7 +7,17 @@ interface SpotifyPlayerProps {
   title?: string;
 }
 
+const SPOTIFY_EPISODE_ID_PATTERN = /^[a-zA-Z0-9]{22}$/;
+
 export default function SpotifyPlayer({ episodeId, title }: SpotifyPlayerProps) {
+  if (!SPOTIFY_EPISODE_ID_PATTERN.test(episodeId)) {
+    return (
+      <div className="w-full h-full bg-leather-video flex items-center justify-center">
+        <p className="text-leather-muted font-sans">Invalid episode</p>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full h-full relative overflow-hidden">
       {/* Heavenly starfield background */}
@@ -26,10 +36,11 @@ export default function SpotifyPlayer({ episodeId, title }: SpotifyPlayerProps) 
             </p>
           )}
           <iframe
-            src={`https://open.spotify.com/embed/episode/${episodeId}?theme=0`}
+            src={`https://open.spotify.com/embed/episode/${encodeURIComponent(episodeId)}?theme=0`}
             width="100%"
             height="352"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            sandbox="allow-scripts allow-same-origin allow-popups"
             loading="lazy"
             className="rounded-xl"
             title="Spotify podcast player"

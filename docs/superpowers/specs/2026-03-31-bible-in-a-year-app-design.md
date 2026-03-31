@@ -2,21 +2,25 @@
 
 ## Overview
 
-A web app companion for Father Mike Schmitz's "Bible in a Year" podcast/YouTube series. The app displays the daily YouTube video alongside the corresponding Bible text (RSV-CE), with synchronized verse highlighting as a future enhancement.
+A web app companion for Father Mike Schmitz's "Bible in a Year" podcast/YouTube series. The app displays the daily Spotify podcast episode alongside the corresponding Bible text (Douay-Rheims), with synchronized verse highlighting as a future enhancement.
 
 The series follows Jeff Cavins' "Great Adventure Bible Timeline," dividing the Catholic Bible into 15 periods across 365 daily episodes. Each day includes 2-3 readings from narrative books, supplemental books, and Psalms/Proverbs.
 
+**Domain:** oneyearword.com
+
 ## Tech Stack
 
-- **Framework**: Next.js + React
+- **Framework**: Next.js + React (static export)
 - **Styling**: Tailwind CSS
 - **Data**: Static JSON files in `public/data/`, fetched at runtime (not bundled into JS). This keeps the bundle small since the full Bible text is large.
 - **Fonts**: `next/font` with Libre Baskerville (serif, Bible text) and Inter (sans-serif, UI)
-- **Deployment**: Vercel (or any static-capable host)
+- **Deployment**: Cloudflare Pages (static export to `out/` directory)
+- **Audio**: Spotify podcast embeds (dark theme iframe)
+- **Security**: CSP meta tag restricting frame-src to open.spotify.com, input validation on all data-driven URLs
 
 ## Routing and State
 
-- **URL structure**: `/day/[n]` (e.g., `/day/42`). Each day is a unique, shareable URL.
+- **URL structure**: `/day/[n]` (e.g., `/day/42`). Each day is a unique, shareable URL. All 365 pages pre-rendered at build time via `generateStaticParams`.
 - **Default route**: `/` redirects to the user's last-visited day (stored in localStorage), or Day 1 on first visit.
 - **State persistence**: Current day stored in localStorage so the user picks up where they left off.
 - **Browser navigation**: Back/forward buttons work naturally via Next.js routing.
@@ -27,24 +31,23 @@ The series follows Jeff Cavins' "Great Adventure Bible Timeline," dividing the C
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  ← Day 41  │  Day 42  │  Day 43 →  │ [Egypt & Exodus ▾] │ [Jump to Day ▾] │
+│  ← Day 41  │  Day 42  │  Day 43 →  │ [Egypt & Exodus ▾] │ [Day # Go] │
 ├──────────────────────────────────┬──────────────────────┤
-│                                  │  [Exodus 24] [Lev 17] [Ps 78]  │
-│                                  │                      │
-│        YouTube Video             │  1 And he said to    │
-│        (embedded player)         │  Moses, "Come up..." │
-│                                  │  ▎2 Moses alone      │  ← highlighted
-│            70%                   │  ▎shall come near...  │
-│                                  │  3 Moses came and    │
-│                                  │  told the people...  │
-│                                  │                      │
+│                                  │  [Ex 24] [Lev 17-18] [Ps 78]   │
+│    ✦  ·  ✦    ·                  │                      │
+│  ·    ✦      ·  ✦                │  1 And he said to    │
+│    Spotify Podcast Player        │  Moses, "Come up..." │
+│    (embedded, dark theme)        │  2 Moses alone       │
+│  ·  ✦    ·    ✦                  │  shall come near...  │
+│    heavenly starfield bg         │  3 Moses came and    │
+│            70%                   │  told the people...  │
 │                                  │        30%           │
 └──────────────────────────────────┴──────────────────────┘
 ```
 
-- **Left panel (70%)**: Embedded YouTube player using the YouTube IFrame Player API
+- **Left panel (70%)**: Spotify podcast embed with animated golden starfield background
 - **Right panel (30%)**: Scrollable Bible text with tabs for each reading of the day
-- **Top navigation bar**: Prev/next arrows, day number, period badge, dropdown menus
+- **Top navigation bar**: Prev/next arrows, day number, period dropdown, day jump input
 
 ### Navigation Bar
 
@@ -71,10 +74,10 @@ The series follows Jeff Cavins' "Great Adventure Bible Timeline," dividing the C
 
 ### Bible Text Panel
 
-- **Tabs**: One tab per reading for the current day (e.g., "Exodus 24", "Lev 17-18", "Psalm 78")
+- **Tabs**: One tab per reading for the current day (e.g., "Ex 24", "Lev 17-18", "Ps 78")
 - **Active tab**: Highlighted with gold accent
-- **Verse display**: Each verse on its own line, prefixed with verse number
-- **Highlight style**: Active verse has a gold (#d4a574) left border and subtle warm background
+- **Verse display**: Each verse on its own line, prefixed with verse number as superscript
+- **Highlight style**: Active verse has a gold (#d4a574) left border and subtle warm background (Phase 2)
 - **Auto-scroll**: When sync is active (Phase 2), the panel auto-scrolls to keep the highlighted verse in view
 
 ## Theme — Dark Warm / Leather
@@ -90,7 +93,9 @@ The series follows Jeff Cavins' "Great Adventure Bible Timeline," dividing the C
 | Muted text       | `#8a8070` |
 | Borders          | `#3a3530` |
 
-Typography: Serif font for Bible text (e.g., Libre Baskerville or similar), sans-serif for UI elements.
+Typography: Libre Baskerville (serif) for Bible text, Inter (sans-serif) for UI elements.
+
+The Spotify player panel has a heavenly animated starfield background — golden stars at three parallax layers drifting upward over a dark warm gradient.
 
 ## Data Model
 
@@ -113,44 +118,27 @@ Typography: Serif font for Bible text (e.g., Libre Baskerville or similar), sans
 }
 ```
 
-### Video Catalog (`data/video-catalog.json`)
+### Podcast Catalog (`data/podcast-catalog.json`)
 
 ```json
 {
-  "periods": [
-    {
-      "name": "Early World",
-      "periodIndex": 0,
-      "playlistId": "PL0QzUlsjD3k3RQG9IqnQm2lL9BC4J859k",
-      "days": [
-        { "day": 1, "videoId": "qvROgfajuMY", "title": "Day 1: ..." }
-      ]
-    }
+  "showId": "4Pppt42NPK2XzKwNIoW7BR",
+  "episodes": [
+    { "day": 1, "episodeId": "abc123def456ghi789jkl0", "title": "Day 1: In the Beginning (2026)" }
   ]
 }
 ```
 
-Source playlists:
-1. Early World — `PL0QzUlsjD3k3RQG9IqnQm2lL9BC4J859k`
-2. Patriarchs — `PL0QzUlsjD3k0FGQKAKHkgvKhQYw-vDKtr`
-3. Egypt and Exodus — `PL0QzUlsjD3k2bI9HhmVEz8k4G2KSCq3d9`
-4. Desert Wanderings — `PL0QzUlsjD3k1lJqkMKOBmYD3TAwJ28FT-`
-5. Conquest and Judges — `PL0QzUlsjD3k1Pb7S8s6H4DkATBek-Em2g`
-6. Messianic Checkpoint (John) — `PL0QzUlsjD3k3Ia2NLkKHjUPXhx8PixJ2T`
-7. Royal Kingdom — `PL0QzUlsjD3k34WN4Jypigb9rhP78Z0yKG`
-8. Messianic Checkpoint (Mark) — `PL0QzUlsjD3k1ah_aTj2AgWBGUWrHSYMNk`
-9. Divided Kingdom — `PL0QzUlsjD3k2VUhmfdISIKDmdvDfEKs-1`
-10. Exile — `PL0QzUlsjD3k2n6-dEeafHLfRxzdUh4LG-`
-11. Messianic Checkpoint (Matthew) — `PL0QzUlsjD3k31tFaKokDhTWlrcJd1fGXu`
-12. Return — `PL0QzUlsjD3k0ZcAJTyelxDrdiq_aYs0TV`
-13. Maccabean Revolt — `PL0QzUlsjD3k3GoB3WSZbo6EC2fPimveCD`
-14. Messianic Fulfillment (Luke) — `PL0QzUlsjD3k23YSnSJFpkOuV20_616mVc`
-15. The Church — `PL0QzUlsjD3k0apt5Zy0HfPUWfWdrCaD-u`
+Fetched via Spotify Web API (client credentials flow). Requires `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` environment variables to run the fetch script. Credentials must NEVER be hardcoded.
+
+### Video Catalog (`data/video-catalog.json`) — kept for potential future use
+
+YouTube video IDs for all 365 days, organized by period. Currently unused in the UI (embedding blocked by video owner) but retained for potential future use if embedding is re-enabled.
 
 ### Bible Text (`data/bible/`)
 
-- RSV-CE translation (Revised Standard Version — Catholic Edition)
-- Organized as one JSON file per book: `data/bible/genesis.json`, `data/bible/exodus.json`, etc.
+- Douay-Rheims translation (public domain Catholic Bible from `isaacronan/douay-rheims-json` on GitHub)
+- Organized as one JSON file per book: `data/bible/genesis.json`, `data/bible/exodus.json`, etc. (73 files total)
 - Each file contains chapters and verses:
 
 ```json
@@ -168,57 +156,43 @@ Source playlists:
 }
 ```
 
-- **Source strategy**: The RSV-CE is copyrighted and may not be freely available in machine-readable form. Implementation order:
-  1. Search for any free/open RSV-CE API or dataset
-  2. If unavailable, use the Douay-Rheims translation (public domain Catholic Bible with all deuterocanonical books)
-  3. The data format is translation-agnostic, so swapping translations later is straightforward
-- Must include deuterocanonical books: Tobit, Judith, Wisdom, Sirach, Baruch, 1 & 2 Maccabees, and additions to Daniel and Esther.
+- Includes all deuterocanonical books: Tobit, Judith, Wisdom, Sirach, Baruch, 1 & 2 Maccabees, and additions to Daniel and Esther.
 - **Book file naming**: Lowercase, hyphenated. E.g., `genesis.json`, `1-samuel.json`, `song-of-solomon.json`, `1-maccabees.json`. A `book-index.json` maps display names to file names.
-- **Reading types**: `"narrative"` (14 main storyline books, displayed bold), `"supplemental"` (other OT/NT books), `"psalm"`, `"proverb"`, `"song"` (Song of Solomon).
+- **Reading types**: `"narrative"` (14 main storyline books), `"supplemental"` (other OT/NT books), `"psalm"`, `"proverb"`, `"song"` (Song of Solomon).
 
-### Sync Data (`data/sync/` — Phase 2)
+## Security
 
-```json
-{
-  "day": 42,
-  "videoId": "abc123",
-  "segments": [
-    { "startTime": 45.2, "endTime": 78.5, "book": "Exodus", "chapter": 24, "verseStart": 1, "verseEnd": 3 },
-    { "startTime": 78.5, "endTime": 112.0, "book": "Exodus", "chapter": 24, "verseStart": 4, "verseEnd": 8 }
-  ]
-}
-```
-
-Generated via **OCR-based frame analysis** (offline pipeline):
-1. Download or stream each video and sample frames at 1-2 second intervals
-2. The videos display the Bible text on screen as it is being read — run OCR on the text region of each frame
-3. Match extracted text against the day's known Bible verses using fuzzy string matching
-4. Produce a timestamp-to-verse map per video
-5. Store as static JSON — no heavy processing at runtime
+- **No hardcoded credentials** — Spotify API credentials use environment variables
+- **Input validation** — Spotify episode IDs validated against `/^[a-zA-Z0-9]{22}$/`, YouTube video IDs against `/^[a-zA-Z0-9_-]{11}$/`, book slugs against `/^[a-z0-9-]+$/`
+- **URL encoding** — All data-driven URL parameters use `encodeURIComponent()`
+- **CSP** — Content Security Policy restricts frame-src to `open.spotify.com` only
+- **Iframe sandbox** — Spotify embed uses `sandbox="allow-scripts allow-same-origin allow-popups"`
+- **No user-generated content** — All data is static and build-time generated
 
 ## Phasing
 
-### Phase 1 — MVP
+### Phase 1 — MVP (Complete)
 
 - Next.js project setup with the Dark Warm / Leather theme
-- Reading plan data parsed from PDF into JSON
-- Video catalog built from the 15 YouTube playlists
-- Main 70/30 layout with embedded YouTube player
-- Bible text panel with tabs for each day's readings
+- Reading plan data parsed from PDF into JSON (365 days)
+- Podcast catalog fetched from Spotify API (365 episodes)
+- Video catalog fetched from YouTube playlists (365 videos, kept as fallback)
+- Main 70/30 layout with Spotify podcast embed + animated starfield
+- Bible text panel with tabs for each day's readings (Douay-Rheims, 73 books)
 - Top navigation bar with prev/next, period dropdown, day jump
-- Bible text displayed (RSV-CE or fallback) with verse numbers
-- Responsive: on mobile, stack video on top and text below
+- Responsive: on mobile/tablet, stack podcast on top and text below
+- Static export for Cloudflare Pages deployment
+- CSP and input validation for security
 
-### Phase 2 — Sync Highlighting
+### Phase 2 — Sync Highlighting (Future)
 
-- **Offline OCR pipeline**: Extract frames from each video at 1-2 second intervals, run OCR on the on-screen Bible text, fuzzy-match against known verses for each day, and produce timestamp-to-verse JSON maps
-- YouTube IFrame Player API integration for playback time tracking
-- Real-time verse highlighting as video plays using pre-built sync data
+- Use Spotify iFrame API `playback_update` event to track current playback position
+- Generate timestamp-to-verse mapping data per episode (via AI speech-to-text or manual curation)
+- Real-time verse highlighting as audio plays
 - Auto-scroll Bible text panel to follow highlighted verse
-- Visual indicator showing sync status (synced vs. unsynced episodes)
 
 ## Responsive Behavior
 
 - **Desktop (>1024px)**: 70/30 side-by-side layout
-- **Tablet (768-1024px)**: Stacked — video on top (16:9 aspect ratio), Bible text below with tabs
-- **Mobile (<768px)**: Stacked — video on top (16:9 aspect ratio), Bible text below with tabs
+- **Tablet (768-1024px)**: Stacked — podcast on top, Bible text below with tabs
+- **Mobile (<768px)**: Stacked — podcast on top, Bible text below with tabs
