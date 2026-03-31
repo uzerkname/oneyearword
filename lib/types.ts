@@ -73,3 +73,26 @@ export interface Period {
   endDay: number;
   playlistId: string;
 }
+
+export interface DiscussionSpan {
+  text: string;
+}
+
+export interface BibleRef {
+  book: string;
+  chapter: number;
+  verse: number;
+}
+
+export interface Connection {
+  id: number;
+  color: 'gold' | 'sage' | 'rose' | 'violet' | 'copper';
+  discussion: DiscussionSpan;
+  bible: BibleRef;
+}
+
+export interface DiscussionData {
+  day: number;
+  transcript: string;
+  connections: Connection[];
+}

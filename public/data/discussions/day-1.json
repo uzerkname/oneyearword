@@ -1,0 +1,42 @@
+{
+  "day": 1,
+  "transcript": "Welcome to Day 1 of the Bible in a Year. Today we begin at the very beginning — In the beginning God created the heavens and the earth. What a majestic opening. Father Mike here, and I want to start by pointing out something beautiful: the very first act of God is an act of creation, of pure gift. And then in Genesis chapter 2, the Lord God formed man of dust from the ground, and breathed into his nostrils the breath of life. That breath — that intimacy — is stunning. God doesn't just speak man into existence the way he speaks light or land into being. He gets close. He breathes. And then in Psalm 19, David looks up at that same creation and writes that the heavens are telling the glory of God. The same God who formed Adam from the dust set the sun in its course like a strong man runs its course with joy. Creation isn't silent — it's constantly singing the Creator's praises.",
+  "connections": [
+    {
+      "id": 1,
+      "color": "gold",
+      "discussion": {
+        "text": "In the beginning God created the heavens and the earth"
+      },
+      "bible": {
+        "book": "Genesis",
+        "chapter": 1,
+        "verse": 1
+      }
+    },
+    {
+      "id": 2,
+      "color": "sage",
+      "discussion": {
+        "text": "the Lord God formed man of dust from the ground, and breathed into his nostrils the breath of life"
+      },
+      "bible": {
+        "book": "Genesis",
+        "chapter": 2,
+        "verse": 7
+      }
+    },
+    {
+      "id": 3,
+      "color": "rose",
+      "discussion": {
+        "text": "the heavens are telling the glory of God"
+      },
+      "bible": {
+        "book": "Psalms",
+        "chapter": 19,
+        "verse": 1
+      }
+    }
+  ]
+}
