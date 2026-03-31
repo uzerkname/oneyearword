@@ -49,7 +49,6 @@ export interface BookData {
 
 export interface BookIndexEntry {
   slug: string;
-  drbName: string;
 }
 
 export interface BookIndex {

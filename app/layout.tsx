@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { serif, sans } from "@/lib/fonts";
+import { serif, sans, cinzel } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} h-full`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${cinzel.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">{children}</body>
     </html>
   );

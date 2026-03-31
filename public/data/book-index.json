@@ -1,294 +1,221 @@
 {
   "Genesis": {
-    "slug": "genesis",
-    "drbName": "THE BOOK OF GENESIS"
+    "slug": "genesis"
   },
   "Exodus": {
-    "slug": "exodus",
-    "drbName": "THE BOOK OF EXODUS"
+    "slug": "exodus"
   },
   "Leviticus": {
-    "slug": "leviticus",
-    "drbName": "THE BOOK OF LEVITICUS"
+    "slug": "leviticus"
   },
   "Numbers": {
-    "slug": "numbers",
-    "drbName": "THE BOOK OF NUMBERS"
+    "slug": "numbers"
   },
   "Deuteronomy": {
-    "slug": "deuteronomy",
-    "drbName": "THE BOOK OF DEUTERONOMY"
+    "slug": "deuteronomy"
   },
   "Joshua": {
-    "slug": "joshua",
-    "drbName": "THE BOOK OF JOSUE"
+    "slug": "joshua"
   },
   "Judges": {
-    "slug": "judges",
-    "drbName": "THE BOOK OF JUDGES"
+    "slug": "judges"
   },
   "Ruth": {
-    "slug": "ruth",
-    "drbName": "THE BOOK OF RUTH"
+    "slug": "ruth"
   },
   "1 Samuel": {
-    "slug": "1-samuel",
-    "drbName": "THE FIRST BOOK OF SAMUEL, OTHERWISE CALLED THE FIRST BOOK OF KINGS"
+    "slug": "1-samuel"
   },
   "2 Samuel": {
-    "slug": "2-samuel",
-    "drbName": "THE SECOND BOOK OF SAMUEL, OTHERWISE CALLED THE SECOND BOOK OF KINGS"
+    "slug": "2-samuel"
   },
   "1 Kings": {
-    "slug": "1-kings",
-    "drbName": "THE THIRD BOOK OF KINGS"
+    "slug": "1-kings"
   },
   "2 Kings": {
-    "slug": "2-kings",
-    "drbName": "THE FOURTH BOOK OF KINGS"
+    "slug": "2-kings"
   },
   "1 Chronicles": {
-    "slug": "1-chronicles",
-    "drbName": "THE FIRST BOOK OF PARALIPOMENON"
+    "slug": "1-chronicles"
   },
   "2 Chronicles": {
-    "slug": "2-chronicles",
-    "drbName": "THE SECOND BOOK OF PARALIPOMENON"
+    "slug": "2-chronicles"
   },
   "Ezra": {
-    "slug": "ezra",
-    "drbName": "THE FIRST BOOK OF ESDRAS"
+    "slug": "ezra"
   },
   "Nehemiah": {
-    "slug": "nehemiah",
-    "drbName": "THE BOOK OF NEHEMIAS, WHICH IS CALLED THE SECOND OF ESDRAS"
+    "slug": "nehemiah"
   },
   "Tobit": {
-    "slug": "tobit",
-    "drbName": "THE BOOK OF TOBIAS"
+    "slug": "tobit"
   },
   "Judith": {
-    "slug": "judith",
-    "drbName": "THE BOOK OF JUDITH"
+    "slug": "judith"
   },
   "Esther": {
-    "slug": "esther",
-    "drbName": "THE BOOK OF ESTHER"
-  },
-  "Job": {
-    "slug": "job",
-    "drbName": "THE BOOK OF JOB"
-  },
-  "Psalms": {
-    "slug": "psalms",
-    "drbName": "THE BOOK OF PSALMS"
-  },
-  "Proverbs": {
-    "slug": "proverbs",
-    "drbName": "THE BOOK OF PROVERBS"
-  },
-  "Ecclesiastes": {
-    "slug": "ecclesiastes",
-    "drbName": "ECCLESIASTES"
-  },
-  "Song of Solomon": {
-    "slug": "song-of-solomon",
-    "drbName": "SOLOMON'S CANTICLE OF CANTICLES"
-  },
-  "Wisdom": {
-    "slug": "wisdom",
-    "drbName": "THE BOOK OF WISDOM"
-  },
-  "Sirach": {
-    "slug": "sirach",
-    "drbName": "ECCLESIASTICUS"
-  },
-  "Isaiah": {
-    "slug": "isaiah",
-    "drbName": "THE PROPHECY OF ISAIAS"
-  },
-  "Jeremiah": {
-    "slug": "jeremiah",
-    "drbName": "THE PROPHECY OF JEREMIAS"
-  },
-  "Lamentations": {
-    "slug": "lamentations",
-    "drbName": "THE LAMENTATIONS OF JEREMIAS"
-  },
-  "Baruch": {
-    "slug": "baruch",
-    "drbName": "THE PROPHECY OF BARUCH"
-  },
-  "Ezekiel": {
-    "slug": "ezekiel",
-    "drbName": "THE PROPHECY OF EZECHIEL"
-  },
-  "Daniel": {
-    "slug": "daniel",
-    "drbName": "THE PROPHECY OF DANIEL"
-  },
-  "Hosea": {
-    "slug": "hosea",
-    "drbName": "THE PROPHECY OF OSEE"
-  },
-  "Joel": {
-    "slug": "joel",
-    "drbName": "THE PROPHECY OF JOEL"
-  },
-  "Amos": {
-    "slug": "amos",
-    "drbName": "THE PROPHECY OF AMOS"
-  },
-  "Obadiah": {
-    "slug": "obadiah",
-    "drbName": "THE PROPHECY OF ABDIAS"
-  },
-  "Jonah": {
-    "slug": "jonah",
-    "drbName": "THE PROPHECY OF JONAS"
-  },
-  "Micah": {
-    "slug": "micah",
-    "drbName": "THE PROPHECY OF MICHEAS"
-  },
-  "Nahum": {
-    "slug": "nahum",
-    "drbName": "THE PROPHECY OF NAHUM"
-  },
-  "Habakkuk": {
-    "slug": "habakkuk",
-    "drbName": "THE PROPHECY OF HABACUC"
-  },
-  "Zephaniah": {
-    "slug": "zephaniah",
-    "drbName": "THE PROPHECY OF SOPHONIAS"
-  },
-  "Haggai": {
-    "slug": "haggai",
-    "drbName": "THE PROPHECY OF AGGEUS"
-  },
-  "Zechariah": {
-    "slug": "zechariah",
-    "drbName": "THE PROPHECY OF ZACHARIAS"
-  },
-  "Malachi": {
-    "slug": "malachi",
-    "drbName": "THE PROPHECY OF MALACHIAS"
+    "slug": "esther"
   },
   "1 Maccabees": {
-    "slug": "1-maccabees",
-    "drbName": "THE FIRST BOOK OF MACHABEES"
+    "slug": "1-maccabees"
   },
   "2 Maccabees": {
-    "slug": "2-maccabees",
-    "drbName": "THE SECOND BOOK OF MACHABEES"
+    "slug": "2-maccabees"
+  },
+  "Job": {
+    "slug": "job"
+  },
+  "Psalms": {
+    "slug": "psalms"
+  },
+  "Proverbs": {
+    "slug": "proverbs"
+  },
+  "Ecclesiastes": {
+    "slug": "ecclesiastes"
+  },
+  "Song of Solomon": {
+    "slug": "song-of-solomon"
+  },
+  "Wisdom": {
+    "slug": "wisdom"
+  },
+  "Sirach": {
+    "slug": "sirach"
+  },
+  "Isaiah": {
+    "slug": "isaiah"
+  },
+  "Jeremiah": {
+    "slug": "jeremiah"
+  },
+  "Lamentations": {
+    "slug": "lamentations"
+  },
+  "Baruch": {
+    "slug": "baruch"
+  },
+  "Ezekiel": {
+    "slug": "ezekiel"
+  },
+  "Daniel": {
+    "slug": "daniel"
+  },
+  "Hosea": {
+    "slug": "hosea"
+  },
+  "Joel": {
+    "slug": "joel"
+  },
+  "Amos": {
+    "slug": "amos"
+  },
+  "Obadiah": {
+    "slug": "obadiah"
+  },
+  "Jonah": {
+    "slug": "jonah"
+  },
+  "Micah": {
+    "slug": "micah"
+  },
+  "Nahum": {
+    "slug": "nahum"
+  },
+  "Habakkuk": {
+    "slug": "habakkuk"
+  },
+  "Zephaniah": {
+    "slug": "zephaniah"
+  },
+  "Haggai": {
+    "slug": "haggai"
+  },
+  "Zechariah": {
+    "slug": "zechariah"
+  },
+  "Malachi": {
+    "slug": "malachi"
   },
   "Matthew": {
-    "slug": "matthew",
-    "drbName": "THE HOLY GOSPEL OF JESUS CHRIST ACCORDING TO SAINT MATTHEW"
+    "slug": "matthew"
   },
   "Mark": {
-    "slug": "mark",
-    "drbName": "THE HOLY GOSPEL OF JESUS CHRIST ACCORDING TO ST. MARK"
+    "slug": "mark"
   },
   "Luke": {
-    "slug": "luke",
-    "drbName": "THE HOLY GOSPEL OF JESUS CHRIST ACCORDING TO ST. LUKE"
+    "slug": "luke"
   },
   "John": {
-    "slug": "john",
-    "drbName": "THE HOLY GOSPEL OF JESUS CHRIST ACCORDING TO ST. JOHN"
+    "slug": "john"
   },
   "Acts": {
-    "slug": "acts",
-    "drbName": "THE ACTS OF THE APOSTLES"
+    "slug": "acts"
   },
   "Romans": {
-    "slug": "romans",
-    "drbName": "THE EPISTLE OF ST. PAUL THE APOSTLE TO THE ROMANS"
+    "slug": "romans"
   },
   "1 Corinthians": {
-    "slug": "1-corinthians",
-    "drbName": "THE FIRST EPISTLE OF ST. PAUL TO THE CORINTHIANS"
+    "slug": "1-corinthians"
   },
   "2 Corinthians": {
-    "slug": "2-corinthians",
-    "drbName": "THE SECOND EPISTLE OF ST. PAUL TO THE CORINTHIANS"
+    "slug": "2-corinthians"
   },
   "Galatians": {
-    "slug": "galatians",
-    "drbName": "THE EPISTLE OF ST. PAUL TO THE GALATIANS"
+    "slug": "galatians"
   },
   "Ephesians": {
-    "slug": "ephesians",
-    "drbName": "THE EPISTLE OF ST. PAUL TO THE EPHESIANS"
+    "slug": "ephesians"
   },
   "Philippians": {
-    "slug": "philippians",
-    "drbName": "THE EPISTLE OF ST. PAUL TO THE PHILIPPIANS"
+    "slug": "philippians"
   },
   "Colossians": {
-    "slug": "colossians",
-    "drbName": "THE EPISTLE OF ST. PAUL TO THE COLOSSIANS"
+    "slug": "colossians"
   },
   "1 Thessalonians": {
-    "slug": "1-thessalonians",
-    "drbName": "THE FIRST EPISTLE OF ST. PAUL TO THE THESSALONIANS"
+    "slug": "1-thessalonians"
   },
   "2 Thessalonians": {
-    "slug": "2-thessalonians",
-    "drbName": "THE SECOND EPISTLE OF ST. PAUL TO THE THESSALONIANS"
+    "slug": "2-thessalonians"
   },
   "1 Timothy": {
-    "slug": "1-timothy",
-    "drbName": "THE FIRST EPISTLE OF ST. PAUL TO TIMOTHY"
+    "slug": "1-timothy"
   },
   "2 Timothy": {
-    "slug": "2-timothy",
-    "drbName": "THE SECOND EPISTLE OF ST. PAUL TO TIMOTHY"
+    "slug": "2-timothy"
   },
   "Titus": {
-    "slug": "titus",
-    "drbName": "THE EPISTLE OF ST. PAUL TO TITUS"
+    "slug": "titus"
   },
   "Philemon": {
-    "slug": "philemon",
-    "drbName": "THE EPISTLE OF ST. PAUL TO PHILEMON"
+    "slug": "philemon"
   },
   "Hebrews": {
-    "slug": "hebrews",
-    "drbName": "THE EPISTLE OF ST. PAUL TO THE HEBREWS"
+    "slug": "hebrews"
   },
   "James": {
-    "slug": "james",
-    "drbName": "THE CATHOLIC EPISTLE OF ST. JAMES THE APOSTLE"
+    "slug": "james"
   },
   "1 Peter": {
-    "slug": "1-peter",
-    "drbName": "THE FIRST EPISTLE OF ST. PETER THE APOSTLE"
+    "slug": "1-peter"
   },
   "2 Peter": {
-    "slug": "2-peter",
-    "drbName": "THE SECOND EPISTLE OF ST. PETER THE APOSTLE"
+    "slug": "2-peter"
   },
   "1 John": {
-    "slug": "1-john",
-    "drbName": "THE FIRST EPISTLE OF ST. JOHN THE APOSTLE"
+    "slug": "1-john"
   },
   "2 John": {
-    "slug": "2-john",
-    "drbName": "THE SECOND EPISTLE OF ST. JOHN THE APOSTLE"
+    "slug": "2-john"
   },
   "3 John": {
-    "slug": "3-john",
-    "drbName": "THE THIRD EPISTLE OF ST. JOHN THE APOSTLE"
+    "slug": "3-john"
   },
   "Jude": {
-    "slug": "jude",
-    "drbName": "THE CATHOLIC EPISTLE OF ST. JUDE"
+    "slug": "jude"
   },
   "Revelation": {
-    "slug": "revelation",
-    "drbName": "THE APOCALYPSE OF ST. JOHN THE APOSTLE"
+    "slug": "revelation"
   }
 }

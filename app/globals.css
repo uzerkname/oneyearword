@@ -12,6 +12,7 @@
 
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
+  --font-cinzel: var(--font-cinzel);
 }
 
 body {
@@ -20,9 +21,271 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Words of Jesus — red letter */
-@layer utilities {
+/* ═══════════════════════════════════════════════════════
+   DIVINE ILLUMINATED TEXT — Words of Jesus
+   ═══════════════════════════════════════════════════════ */
+
+/* --- Keyframes --- */
+
+@keyframes divine-shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+@keyframes glow-pulse-a {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.85; }
+}
+
+@keyframes glow-pulse-b {
+  0%, 100% { opacity: 0.3; }
+  60% { opacity: 0.65; }
+}
+
+@keyframes ambient-pulse {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes ray-fade-in {
+  0% { opacity: 0; }
+  100% { opacity: var(--ray-opacity, 0.12); }
+}
+
+@keyframes particle-float {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.5);
+  }
+  15% {
+    opacity: var(--p-max-opacity, 0.4);
+    transform: translate(
+      calc(var(--drift-x, 0px) * 0.15),
+      calc(var(--drift-y, -20px) * 0.15)
+    ) scale(1);
+  }
+  85% {
+    opacity: calc(var(--p-max-opacity, 0.4) * 0.5);
+    transform: translate(
+      calc(var(--drift-x, 0px) * 0.85),
+      calc(var(--drift-y, -20px) * 0.85)
+    ) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--drift-x, 0px), var(--drift-y, -20px)) scale(0.3);
+  }
+}
+
+@keyframes sparkle-blink {
+  0%, 100% { opacity: 0; transform: scale(0.3); }
+  50% { opacity: var(--s-max-opacity, 0.7); transform: scale(1); }
+}
+
+/* --- Verse text: golden gradient + shimmer --- */
+
+.verse-jesus {
+  color: transparent !important;
+  background: linear-gradient(
+    90deg,
+    #d4a574 0%,
+    #ffd980 20%,
+    #f5c86a 40%,
+    #c8943a 60%,
+    #ffd980 80%,
+    #d4a574 100%
+  ) !important;
+  background-size: 300% 100% !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: divine-shimmer 12s ease-in-out infinite;
+  position: relative;
+  will-change: background-position;
+}
+
+/* Verse number inside Jesus text — Cinzel Decorative */
+.verse-jesus > sup {
+  font-family: var(--font-cinzel), serif;
+  color: transparent !important;
+  background: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Group wrapper: glow layers, vignette, containment --- */
+
+.verse-jesus-group {
+  position: relative;
+  border-left: 2px solid rgba(212, 165, 116, 0.15);
+  padding-left: 12px;
+  margin-left: -14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  contain: layout style;
+  isolation: isolate;
+}
+
+/* Blurred glow copy A — soft near glow */
+.verse-jesus-group::before {
+  content: "";
+  position: absolute;
+  inset: -8px -16px;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 50%,
+    rgba(255, 217, 128, 0.12) 0%,
+    rgba(212, 165, 116, 0.06) 40%,
+    transparent 70%
+  );
+  filter: blur(20px);
+  opacity: 0.5;
+  animation: glow-pulse-a 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+  will-change: opacity;
+}
+
+/* Blurred glow copy B — wider diffuse halo */
+.verse-jesus-group::after {
+  content: "";
+  position: absolute;
+  inset: -20px -30px;
+  background: radial-gradient(
+    ellipse 100% 80% at 50% 50%,
+    rgba(245, 166, 35, 0.08) 0%,
+    rgba(200, 148, 58, 0.04) 50%,
+    transparent 75%
+  );
+  filter: blur(45px);
+  opacity: 0.3;
+  animation: glow-pulse-b 7s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+  will-change: opacity;
+}
+
+/* --- Ambient glow element (rendered via JS) --- */
+
+.divine-ambient {
+  position: absolute;
+  inset: -40px -50px;
+  background: radial-gradient(
+    ellipse 70% 50% at 50% 40%,
+    rgba(255, 217, 128, 0.10) 0%,
+    rgba(212, 165, 116, 0.05) 40%,
+    transparent 70%
+  );
+  filter: blur(30px);
+  animation: ambient-pulse 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -2;
+  will-change: opacity, transform;
+}
+
+/* --- Vignette — light emission halo --- */
+
+.divine-vignette {
+  position: absolute;
+  inset: -60px -70px;
+  background: radial-gradient(
+    ellipse 60% 45% at 50% 45%,
+    rgba(255, 217, 128, 0.06) 0%,
+    rgba(200, 148, 58, 0.03) 35%,
+    transparent 65%
+  );
+  pointer-events: none;
+  z-index: -3;
+}
+
+/* --- Light rays --- */
+
+.divine-ray {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform-origin: top center;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(255, 217, 128, var(--ray-opacity, 0.08)) 30%,
+    rgba(212, 165, 116, calc(var(--ray-opacity, 0.08) * 0.6)) 60%,
+    transparent 100%
+  );
+  width: var(--ray-width, 3px);
+  height: var(--ray-height, 90px);
+  filter: blur(var(--ray-blur, 10px));
+  transform: translateX(-50%) rotate(var(--ray-angle, 0deg));
+  opacity: 0;
+  animation: ray-fade-in 1.5s ease-out forwards;
+  animation-delay: var(--ray-delay, 0s);
+  pointer-events: none;
+  z-index: -1;
+  will-change: opacity;
+}
+
+/* --- Floating particles --- */
+
+.divine-particle {
+  position: absolute;
+  width: var(--p-size, 4px);
+  height: var(--p-size, 4px);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 217, 128, 0.9) 0%,
+    rgba(212, 165, 116, 0.4) 50%,
+    transparent 100%
+  );
+  left: var(--p-left, 50%);
+  top: var(--p-top, 50%);
+  opacity: 0;
+  animation: particle-float var(--p-duration, 10s) ease-in-out infinite;
+  animation-delay: var(--p-delay, 0s);
+  pointer-events: none;
+  z-index: 1;
+  will-change: opacity, transform;
+}
+
+/* --- Sparkle dots --- */
+
+.divine-sparkle {
+  position: absolute;
+  width: var(--s-size, 2px);
+  height: var(--s-size, 2px);
+  border-radius: 50%;
+  background: rgba(255, 230, 170, 0.95);
+  left: var(--s-left, 50%);
+  top: var(--s-top, 50%);
+  opacity: 0;
+  animation: sparkle-blink var(--s-duration, 3s) ease-in-out infinite;
+  animation-delay: var(--s-delay, 0s);
+  pointer-events: none;
+  z-index: 1;
+  will-change: opacity, transform;
+}
+
+/* --- Performance: pause animations when off-screen --- */
+@media (prefers-reduced-motion: reduce) {
   .verse-jesus {
-    color: #d94040 !important;
+    animation: none;
+    color: #d4a574 !important;
+    background: none;
+    -webkit-text-fill-color: #d4a574;
+  }
+  .verse-jesus-group::before,
+  .verse-jesus-group::after,
+  .divine-ambient,
+  .divine-ray,
+  .divine-particle,
+  .divine-sparkle {
+    animation: none;
+    opacity: 0;
   }
 }
