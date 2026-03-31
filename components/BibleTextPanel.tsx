@@ -22,6 +22,12 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [highlightJesus, setHighlightJesus] = useState(true);
+  const [hasRedLetters, setHasRedLetters] = useState(false);
+
+  const onHasRedLetters = useCallback((has: boolean) => {
+    setHasRedLetters(has);
+  }, []);
 
   // Reset active tab when day changes
   useEffect(() => {
@@ -76,11 +82,35 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
 
   return (
     <div className="flex flex-col h-full bg-leather-text">
-      <ReadingTabs
-        readings={readings}
-        activeIndex={activeIndex}
-        onTabChange={setActiveIndex}
-      />
+      <div className="flex items-center border-b border-leather-border bg-leather-text">
+        <ReadingTabs
+          readings={readings}
+          activeIndex={activeIndex}
+          onTabChange={setActiveIndex}
+        />
+        {hasRedLetters && (
+          <button
+            onClick={() => setHighlightJesus((p) => !p)}
+            className="ml-auto flex-shrink-0 px-3 py-2 flex items-center gap-1.5 text-xs font-sans transition-colors"
+            title={highlightJesus ? "Hide Jesus' words highlighting" : "Highlight Jesus' words"}
+          >
+            <span
+              className={`inline-block w-7 h-4 rounded-full relative transition-colors duration-200 ${
+                highlightJesus ? "bg-amber-600/80" : "bg-leather-border"
+              }`}
+            >
+              <span
+                className={`absolute top-0.5 left-0.5 w-3 h-3 rounded-full bg-white transition-transform duration-200 ${
+                  highlightJesus ? "translate-x-3" : "translate-x-0"
+                }`}
+              />
+            </span>
+            <span className={highlightJesus ? "text-amber-500/90" : "text-leather-muted"}>
+              Highlight Jesus&apos; words
+            </span>
+          </button>
+        )}
+      </div>
       <div ref={scrollRef} className="flex-1 overflow-y-auto">
         {loading && (
           <div className="p-4 space-y-2">
@@ -97,7 +127,12 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
           <div className="p-4 text-leather-muted text-sm">{error}</div>
         )}
         {!loading && !error && activeReading && (
-          <VerseList chapters={chapters} bookName={activeReading.book} />
+          <VerseList
+            chapters={chapters}
+            bookName={activeReading.book}
+            highlightJesus={highlightJesus}
+            onHasRedLetters={onHasRedLetters}
+          />
         )}
       </div>
     </div>

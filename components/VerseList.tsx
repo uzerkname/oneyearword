@@ -11,6 +11,8 @@ interface ChapterBlock {
 interface VerseListProps {
   chapters: ChapterBlock[];
   bookName: string;
+  highlightJesus?: boolean;
+  onHasRedLetters?: (has: boolean) => void;
 }
 
 interface RedLetterData {
@@ -178,19 +180,24 @@ function groupVerses(
   verses: Verse[],
   redLetters: RedLetterData,
   bookName: string,
-  chapter: number
+  chapter: number,
+  highlightJesus: boolean
 ) {
   const elements: React.ReactNode[] = [];
   let jesusRun: Verse[] = [];
 
   function flushRun() {
     if (jesusRun.length === 0) return;
-    const groupKey = `jesus-${chapter}-${jesusRun[0].verse}`;
-    elements.push(
-      <DivineGroup key={groupKey} groupKey={groupKey}>
-        {jesusRun.map((v) => renderVerse(v, true))}
-      </DivineGroup>
-    );
+    if (highlightJesus) {
+      const groupKey = `jesus-${chapter}-${jesusRun[0].verse}`;
+      elements.push(
+        <DivineGroup key={groupKey} groupKey={groupKey}>
+          {jesusRun.map((v) => renderVerse(v, true))}
+        </DivineGroup>
+      );
+    } else {
+      jesusRun.forEach((v) => elements.push(renderVerse(v, false)));
+    }
     jesusRun = [];
   }
 
@@ -251,12 +258,21 @@ function DivineGroup({
   );
 }
 
-export default function VerseList({ chapters, bookName }: VerseListProps) {
+export default function VerseList({ chapters, bookName, highlightJesus = true, onHasRedLetters }: VerseListProps) {
   const [redLetters, setRedLetters] = useState<RedLetterData>({});
 
   useEffect(() => {
     loadRedLetters().then(setRedLetters);
   }, []);
+
+  // Detect whether current chapters contain any red-letter verses
+  useEffect(() => {
+    if (!onHasRedLetters || Object.keys(redLetters).length === 0) return;
+    const found = chapters.some((ch) =>
+      ch.verses.some((v) => isRedLetter(redLetters, bookName, ch.chapter, v.verse))
+    );
+    onHasRedLetters(found);
+  }, [redLetters, chapters, bookName, onHasRedLetters]);
 
   return (
     <div className="px-4 py-3 font-serif">
@@ -267,7 +283,7 @@ export default function VerseList({ chapters, bookName }: VerseListProps) {
               {bookName} {ch.chapter}
             </h3>
           )}
-          {groupVerses(ch.verses, redLetters, bookName, ch.chapter)}
+          {groupVerses(ch.verses, redLetters, bookName, ch.chapter, highlightJesus)}
         </div>
       ))}
     </div>

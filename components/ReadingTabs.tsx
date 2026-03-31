@@ -15,7 +15,7 @@ export default function ReadingTabs({
   onTabChange,
 }: ReadingTabsProps) {
   return (
-    <div className="flex overflow-x-auto border-b border-leather-border bg-leather-text scrollbar-none">
+    <div className="flex overflow-x-auto bg-leather-text scrollbar-none">
       {readings.map((reading, i) => (
         <button
           key={i}
