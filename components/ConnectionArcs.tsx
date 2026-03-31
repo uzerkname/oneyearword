@@ -38,6 +38,7 @@ export default function ConnectionArcs({
 }: ConnectionArcsProps) {
   const [arcs, setArcs] = useState<ArcData[]>([]);
   const [reducedMotion, setReducedMotion] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
   const rafPending = useRef(false);
 
   const recalculate = useCallback(() => {
@@ -156,6 +157,18 @@ export default function ConnectionArcs({
     mql.addEventListener("change", handler);
     return () => mql.removeEventListener("change", handler);
   }, []);
+
+  // Only render on desktop (>= 1024px)
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 1024px)");
+    setIsDesktop(mql.matches);
+
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, []);
+
+  if (!isDesktop) return null;
 
   return (
     <svg

@@ -153,7 +153,7 @@ export default function DayView({ day }: DayViewProps) {
           className="flex-1 flex flex-col lg:flex-row min-h-0 relative"
         >
           {/* Discussion Panel - 25% */}
-          <div className="lg:w-[25%] w-full lg:h-full border-r border-leather-border">
+          <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border">
             <DiscussionPanel
               transcript={discussion.transcript}
               connections={discussion.connections}
@@ -165,7 +165,7 @@ export default function DayView({ day }: DayViewProps) {
           </div>
 
           {/* Podcast Panel - 50% */}
-          <div className="lg:w-[50%] w-full lg:h-full">
+          <div className="order-1 lg:order-2 lg:w-[50%] w-full lg:h-full">
             {podcast ? (
               <SpotifyPlayer
                 episodeId={podcast.episodeId}
@@ -181,7 +181,7 @@ export default function DayView({ day }: DayViewProps) {
           </div>
 
           {/* Bible Text Panel - 25% */}
-          <div className="lg:w-[25%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial">
+          <div className="order-3 lg:order-3 lg:w-[25%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial">
             <BibleTextPanel
               readings={dayPlan.readings}
               day={day}
