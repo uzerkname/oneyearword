@@ -84,11 +84,11 @@ export default function BibleTextPanel({ readings, day }: BibleTextPanelProps) {
       <div ref={scrollRef} className="flex-1 overflow-y-auto">
         {loading && (
           <div className="p-4 space-y-2">
-            {Array.from({ length: 8 }).map((_, i) => (
+            {[75, 60, 85, 70, 90, 65, 80, 55].map((w, i) => (
               <div
                 key={i}
                 className="h-4 bg-leather-border/30 rounded animate-pulse"
-                style={{ width: `${60 + Math.random() * 35}%` }}
+                style={{ width: `${w}%` }}
               />
             ))}
           </div>

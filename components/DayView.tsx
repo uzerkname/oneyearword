@@ -49,11 +49,11 @@ export default function DayView({ day }: DayViewProps) {
         <div className="flex-1 flex flex-col lg:flex-row">
           <div className="lg:w-[70%] bg-leather-video animate-pulse aspect-video lg:aspect-auto" />
           <div className="lg:w-[30%] bg-leather-text p-4 space-y-2">
-            {Array.from({ length: 10 }).map((_, i) => (
+            {[75, 60, 85, 70, 90, 65, 80, 55, 72, 88].map((w, i) => (
               <div
                 key={i}
                 className="h-4 bg-leather-border/30 rounded animate-pulse"
-                style={{ width: `${50 + Math.random() * 45}%` }}
+                style={{ width: `${w}%` }}
               />
             ))}
           </div>
