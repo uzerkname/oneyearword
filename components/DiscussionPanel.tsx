@@ -1,5 +1,6 @@
 "use client";
 
+import { type RefObject } from "react";
 import { Connection } from "@/lib/types";
 
 interface DiscussionPanelProps {
@@ -8,7 +9,7 @@ interface DiscussionPanelProps {
   activeConnectionId: number | null;
   onConnectionHover: (id: number | null) => void;
   onConnectionClick: (id: number, side: "disc" | "bible") => void;
-  scrollRef: React.RefObject<HTMLDivElement | null>;
+  scrollRef: RefObject<HTMLDivElement | null>;
 }
 
 interface Segment {
