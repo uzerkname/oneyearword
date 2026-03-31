@@ -56,6 +56,17 @@ export interface BookIndex {
   [displayName: string]: BookIndexEntry;
 }
 
+export interface PodcastEpisode {
+  day: number;
+  episodeId: string;
+  title: string;
+}
+
+export interface PodcastCatalog {
+  showId: string;
+  episodes: PodcastEpisode[];
+}
+
 export interface Period {
   name: string;
   periodIndex: number;
