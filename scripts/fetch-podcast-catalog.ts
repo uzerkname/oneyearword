@@ -1,9 +1,15 @@
 import { writeFileSync } from "fs";
 import { resolve } from "path";
 
-const CLIENT_ID = "REDACTED";
-const CLIENT_SECRET = "REDACTED";
+const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
 const SHOW_ID = "4Pppt42NPK2XzKwNIoW7BR";
+
+if (!CLIENT_ID || !CLIENT_SECRET) {
+  console.error("Missing SPOTIFY_CLIENT_ID or SPOTIFY_CLIENT_SECRET env vars.");
+  console.error("Usage: SPOTIFY_CLIENT_ID=xxx SPOTIFY_CLIENT_SECRET=xxx npx tsx scripts/fetch-podcast-catalog.ts");
+  process.exit(1);
+}
 
 interface SpotifyEpisode {
   id: string;
