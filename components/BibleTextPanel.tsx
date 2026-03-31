@@ -14,6 +14,7 @@ interface BibleTextPanelProps {
   onConnectionHover?: (id: number | null) => void;
   onConnectionClick?: (id: number, side: 'disc' | 'bible') => void;
   scrollRef?: React.RefObject<HTMLDivElement | null>;
+  activeTab?: number;
   setActiveTab?: (index: number) => void;
   onActiveTabChange?: (index: number) => void;
 }
@@ -31,6 +32,7 @@ export default function BibleTextPanel({
   onConnectionHover,
   onConnectionClick,
   scrollRef: propScrollRef,
+  activeTab,
   setActiveTab,
   onActiveTabChange,
 }: BibleTextPanelProps) {
@@ -56,6 +58,13 @@ export default function BibleTextPanel({
   useEffect(() => {
     setActiveIndex(0);
   }, [day]);
+
+  // Sync parent-controlled activeTab into internal state
+  useEffect(() => {
+    if (activeTab != null && activeTab !== activeIndex && activeTab >= 0 && activeTab < readings.length) {
+      setActiveIndexState(activeTab);
+    }
+  }, [activeTab]);
 
   const loadReading = useCallback(async (reading: Reading) => {
     setLoading(true);
