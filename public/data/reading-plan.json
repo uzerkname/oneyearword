@@ -1,0 +1,10250 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "period": "Early World",
+      "periodIndex": 0,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            19
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "period": "Early World",
+      "periodIndex": 0,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            104
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "period": "Early World",
+      "periodIndex": 0,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            136
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "period": "Early World",
+      "periodIndex": 0,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            7,
+            8,
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            1
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "period": "Early World",
+      "periodIndex": 0,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            2
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            1
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            14,
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            1
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            16,
+            17
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            1
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            18,
+            19
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            2
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            20,
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            2
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            22,
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            2
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            2
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            25,
+            26
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            2
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            27,
+            28
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            29,
+            30
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            19,
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            31,
+            32
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            21,
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            33,
+            34
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            23,
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            35,
+            36
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            25,
+            26
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            37
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            27,
+            28
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            38
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            29,
+            30
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            39,
+            40
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            31,
+            32
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            3
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            41,
+            42
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            33,
+            34
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            4
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            43,
+            44
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            35,
+            36
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            4
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            45,
+            46
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            37,
+            38
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            4
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            47,
+            48
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            39,
+            40
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            16
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "period": "Patriarchs",
+      "periodIndex": 1,
+      "readings": [
+        {
+          "book": "Genesis",
+          "chapters": [
+            49,
+            50
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Job",
+          "chapters": [
+            41,
+            42
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            17
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            44
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 28,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            45
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 29,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            46
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 30,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            47
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 31,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            48
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 32,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            49
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 33,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            50
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 34,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            114
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 35,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            53
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 36,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            71
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 37,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            73
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 38,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            19,
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            74
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 39,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            75
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 40,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            76
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 41,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            77
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 42,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            78
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 43,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            25,
+            26
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            19
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            119
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 44,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            27,
+            28
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            119
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 45,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            29
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            119
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 46,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            30,
+            31
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            115
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 47,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            32
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            23
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            79
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 48,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            33,
+            34
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            80
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 49,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            35,
+            36
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            25
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            81
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 50,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            37,
+            38
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            26
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            82
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 51,
+      "period": "Egypt and Exodus",
+      "periodIndex": 2,
+      "readings": [
+        {
+          "book": "Exodus",
+          "chapters": [
+            39,
+            40
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Leviticus",
+          "chapters": [
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            83
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 52,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            1
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            84
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 53,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            85
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 54,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            87
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 55,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            88
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 56,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            90
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 57,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            6
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            91
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 58,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            92
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 59,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            8,
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            93
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 60,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            10
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 61,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            33
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 62,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            94
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 63,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            95
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 64,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            96
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 65,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            97
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 66,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            17
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            98
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 67,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            19,
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            99
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 68,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            19,
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            100
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 69,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            102
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 70,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            23
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            105
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 71,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            24,
+            25
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            106
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 72,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            24,
+            25
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            26
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            107
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 73,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            26
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            111
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 74,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            27,
+            28
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            28
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            112
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 75,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            29,
+            30
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            29
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            113
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 76,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            31
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            30
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            116
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 77,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            32
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            31
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            117
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 78,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            33
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            32
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            118
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 79,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            34
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            33
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            120
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "period": "Desert Wanderings",
+      "periodIndex": 3,
+      "readings": [
+        {
+          "book": "Numbers",
+          "chapters": [
+            35,
+            36
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Deuteronomy",
+          "chapters": [
+            34
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            121
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 81,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            123
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 82,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            5,
+            6,
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            125
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 83,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            8,
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            126
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            128
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 85,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            12,
+            13,
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            129
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 86,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            130
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 87,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            19,
+            20,
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            131
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 88,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Joshua",
+          "chapters": [
+            22,
+            23,
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            132
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 89,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ruth",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            133
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 90,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ruth",
+          "chapters": [
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            134
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 91,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            6,
+            7,
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ruth",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            135
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 92,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            9,
+            10,
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ruth",
+          "chapters": [
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            137
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 93,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            146
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 94,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            16,
+            17,
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            147
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 95,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "Judges",
+          "chapters": [
+            19,
+            20,
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            148
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 96,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            149
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 97,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            150
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 98,
+      "period": "Conquest and Judges",
+      "periodIndex": 4,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            6,
+            7,
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            86
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 99,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            5
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 100,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            5
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 101,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            7,
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            5
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 102,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            10,
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            6
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 103,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            13,
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            6
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 104,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            16,
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            6
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 105,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 5,
+      "readings": [
+        {
+          "book": "John",
+          "chapters": [
+            19,
+            20,
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            6
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 106,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            6
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 107,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            55
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 108,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            58
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 109,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            61
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 110,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            17
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            12
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 111,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            18,
+            19
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            59
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 112,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            142
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 113,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            21,
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            52
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 114,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            54
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 115,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            57
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 116,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            25
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            63
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 117,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            26
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            56
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 118,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            27,
+            28
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            34
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 119,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Samuel",
+          "chapters": [
+            29,
+            30,
+            31
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            18
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 120,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            1
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            13
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 121,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            24
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 122,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            25
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 123,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            26
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 124,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            27
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 125,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            89
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 126,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            60
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 127,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            28
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 128,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            31
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 129,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            32
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 130,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            51
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 131,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            17
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            35
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 132,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            14
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 133,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            19,
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            3
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 134,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            15
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 135,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            17
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            36
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 136,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            23
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            37
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 137,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            19
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            38
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 138,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            25
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            39
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 139,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            26
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            40
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 140,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            41
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 141,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            28
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            42
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 142,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "2 Samuel",
+          "chapters": [
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Chronicles",
+          "chapters": [
+            29
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            30
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 143,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            1
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            43
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 144,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            62
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 145,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            64
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 146,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            65
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 147,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            66
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 148,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            6
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            4
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 149,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ecclesiastes",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            5
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 150,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ecclesiastes",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            6
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 151,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ecclesiastes",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            7
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 152,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ecclesiastes",
+          "chapters": [
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            8
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 153,
+      "period": "Royal Kingdom",
+      "periodIndex": 6,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ecclesiastes",
+          "chapters": [
+            10,
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            9
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 154,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            11
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 155,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            20
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 156,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            21
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 157,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            23
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 158,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            29
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 159,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            67
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 160,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            68
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 161,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 7,
+      "readings": [
+        {
+          "book": "Mark",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            22
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 162,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            1
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 163,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            2
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 164,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            3
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 165,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            16,
+            17
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            4
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 166,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            18,
+            19
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            5
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 167,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            19,
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            6
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 168,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            21,
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            7
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 169,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "1 Kings",
+          "chapters": [
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            23
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Song of Solomon",
+          "chapters": [
+            8
+          ],
+          "type": "song"
+        }
+      ]
+    },
+    {
+      "day": 170,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            1
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            69
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 171,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            25
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            70
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 172,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            26,
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            72
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 173,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            28
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            127
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 174,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Hosea",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            101
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 175,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Hosea",
+          "chapters": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            103
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 176,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Hosea",
+          "chapters": [
+            8,
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            108
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 177,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Hosea",
+          "chapters": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            109
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 178,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Amos",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            110
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 179,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Amos",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            122
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 180,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Amos",
+          "chapters": [
+            7,
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            124
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 181,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Jonah",
+          "chapters": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            138
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 182,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Micah",
+          "chapters": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            139
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 183,
+      "period": "Divided Kingdom",
+      "periodIndex": 8,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            17
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Micah",
+          "chapters": [
+            5,
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            140
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 184,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            29
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            141
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 185,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            19
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            30
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            143
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 186,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            31
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            144
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 187,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            32
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Psalms",
+          "chapters": [
+            145
+          ],
+          "type": "psalm"
+        }
+      ]
+    },
+    {
+      "day": 188,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            33
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            7
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 189,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            34
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            8
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 190,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            35
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            8
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 191,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "2 Kings",
+          "chapters": [
+            25
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Chronicles",
+          "chapters": [
+            36
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            9
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 192,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Tobit",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            9
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 193,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Tobit",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            9
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 194,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Tobit",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 195,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Tobit",
+          "chapters": [
+            7,
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 196,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Tobit",
+          "chapters": [
+            10,
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 197,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            11,
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Tobit",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 198,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Joel",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 199,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            16,
+            17
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Joel",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 200,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            18,
+            19,
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Nahum",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 201,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            21,
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Nahum",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            10
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 202,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            23,
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Habakkuk",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 203,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            25,
+            26,
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Habakkuk",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 204,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            28,
+            29
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Zephaniah",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 205,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            30,
+            31
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Zephaniah",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 206,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            32,
+            33
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Baruch",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 207,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            34,
+            35,
+            36
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Baruch",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 208,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            37,
+            38
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Baruch",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 209,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            39,
+            40
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            11
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 210,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            41,
+            42
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 211,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            43,
+            44
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 212,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            45,
+            46
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 213,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            47,
+            48
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 214,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            49,
+            50
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 215,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            51,
+            52
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 216,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            53,
+            54
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            12
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 217,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            55,
+            56
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            13
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 218,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            57,
+            58
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            13
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 219,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            59,
+            60
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            19
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            13
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 220,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            61,
+            62
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            13
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 221,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            63,
+            64
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            21,
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            13
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 222,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            65
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            23,
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            13
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 223,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Isaiah",
+          "chapters": [
+            66
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            25,
+            26
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 224,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 225,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            28
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 226,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            29,
+            30
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 227,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            31,
+            32
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 228,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            33
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 229,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            34,
+            35
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 230,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            36
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 231,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            37,
+            38
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            14
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 232,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            39
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 233,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            40
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 234,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            41,
+            42
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 235,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            43,
+            44
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 236,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            16,
+            17
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            45,
+            46
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 237,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            18,
+            19
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Ezekiel",
+          "chapters": [
+            47,
+            48
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 238,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            20,
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 239,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            15
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 240,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            23
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 241,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            24,
+            25
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 242,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            26,
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 243,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            28,
+            29
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 244,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            30
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 245,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            31
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Daniel",
+          "chapters": [
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 246,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            32
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 247,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            33,
+            34
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            16
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 248,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            35,
+            36
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            17
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 249,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            37,
+            38
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            17
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 250,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            39,
+            40
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            17
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 251,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            41,
+            42
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            12,
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            17
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 252,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            43,
+            44
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Judith",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            17
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 253,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            45,
+            46
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Lamentations",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            17
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 254,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            47,
+            48
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Lamentations",
+          "chapters": [
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            18
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 255,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            49,
+            50
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Lamentations",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            18
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 256,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            51
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Lamentations",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            18
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 257,
+      "period": "Exile",
+      "periodIndex": 9,
+      "readings": [
+        {
+          "book": "Jeremiah",
+          "chapters": [
+            52
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Obadiah",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            18
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 258,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            18
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 259,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            5,
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            18
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 260,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            8,
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 261,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            11,
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 262,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 263,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            18,
+            19,
+            20,
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 264,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            22,
+            23,
+            24
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 265,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            25,
+            26
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 266,
+      "period": "Messianic Checkpoint",
+      "periodIndex": 10,
+      "readings": [
+        {
+          "book": "Matthew",
+          "chapters": [
+            27,
+            28
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            19
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 267,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Ezra",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Haggai",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 268,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Ezra",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Zechariah",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 269,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Ezra",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Zechariah",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 270,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Ezra",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Zechariah",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 271,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Ezra",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Zechariah",
+          "chapters": [
+            9,
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 272,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Zechariah",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 273,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Zechariah",
+          "chapters": [
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 274,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            20
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 275,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 276,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            3,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 277,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            4,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 278,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            15,
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 279,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            8,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 280,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Esther",
+          "chapters": [
+            9,
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 281,
+      "period": "Return",
+      "periodIndex": 11,
+      "readings": [
+        {
+          "book": "Nehemiah",
+          "chapters": [
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Malachi",
+          "chapters": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 282,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            1
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            21
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 283,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 284,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            7,
+            8,
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 285,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            10,
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 286,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            13,
+            14,
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 287,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            6
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            16,
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 288,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            19,
+            20,
+            21
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 289,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            22,
+            23
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            22
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 290,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            24,
+            25
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 291,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            26,
+            27
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 292,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            28,
+            29
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 293,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            30,
+            31
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 294,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            32,
+            33
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 295,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            34,
+            35
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 296,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            36,
+            37
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 297,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "1 Maccabees",
+          "chapters": [
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            38,
+            39
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            23
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 298,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            40,
+            41
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 299,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            42,
+            43,
+            44
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 300,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            45,
+            46
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 301,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            47,
+            48,
+            49
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 302,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Sirach",
+          "chapters": [
+            50,
+            51
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 303,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 304,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 305,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            24
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 306,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            9
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 307,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 308,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 309,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 310,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 311,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            17,
+            18
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 312,
+      "period": "Maccabean Revolt",
+      "periodIndex": 12,
+      "readings": [
+        {
+          "book": "2 Maccabees",
+          "chapters": [
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Wisdom",
+          "chapters": [
+            19
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 313,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 314,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            25
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 315,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            6,
+            7,
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 316,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 317,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 318,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            13,
+            14,
+            15,
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 319,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            17,
+            18,
+            19
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 320,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            20,
+            21,
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 321,
+      "period": "Messianic Fulfillment",
+      "periodIndex": 13,
+      "readings": [
+        {
+          "book": "Luke",
+          "chapters": [
+            22,
+            23,
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 322,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            1
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 323,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            2
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            26
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 324,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            3
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 325,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            4
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 326,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            5
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 327,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            6
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 328,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            7
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 329,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            8
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 330,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            9
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Romans",
+          "chapters": [
+            15,
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 331,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            10
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 332,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            11
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            27
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 333,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            12
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 334,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            13
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 335,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            14
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 336,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            15
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            11,
+            12
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 337,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            16
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 338,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            17
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            15
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 339,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            18
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "1 Corinthians",
+          "chapters": [
+            16
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 340,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            19
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Corinthians",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 341,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            20
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Corinthians",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            28
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 342,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            21
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Corinthians",
+          "chapters": [
+            6,
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 343,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            22
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Corinthians",
+          "chapters": [
+            9,
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 344,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            23
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "2 Corinthians",
+          "chapters": [
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 345,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            24
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Galatians",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 346,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            25
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Galatians",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 347,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            26
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ephesians",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 348,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            27
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Ephesians",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 349,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Acts",
+          "chapters": [
+            28
+          ],
+          "type": "narrative"
+        },
+        {
+          "book": "Philippians",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            29
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 350,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "James",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Philippians",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 351,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "James",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Colossians",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 352,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "1 Peter",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Colossians",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 353,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "1 Peter",
+          "chapters": [
+            3,
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "1 Thessalonians",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 354,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "2 Peter",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "1 Thessalonians",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 355,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "1 John",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "2 Thessalonians",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 356,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "1 John",
+          "chapters": [
+            4,
+            5
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "1 Timothy",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 357,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "2 John",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "3 John",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "1 Timothy",
+          "chapters": [
+            4,
+            5,
+            6
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            30
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 358,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Jude",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "2 Timothy",
+          "chapters": [
+            1,
+            2
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 359,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "2 Timothy",
+          "chapters": [
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 360,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Titus",
+          "chapters": [
+            1,
+            2,
+            3
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 361,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Philemon",
+          "chapters": [
+            1
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 362,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            12,
+            13,
+            14
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Hebrews",
+          "chapters": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 363,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            15,
+            16,
+            17
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Hebrews",
+          "chapters": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 364,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            18,
+            19,
+            20
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Hebrews",
+          "chapters": [
+            9,
+            10
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    },
+    {
+      "day": 365,
+      "period": "The Church",
+      "periodIndex": 14,
+      "readings": [
+        {
+          "book": "Revelation",
+          "chapters": [
+            21,
+            22
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Hebrews",
+          "chapters": [
+            11,
+            12,
+            13
+          ],
+          "type": "supplemental"
+        },
+        {
+          "book": "Proverbs",
+          "chapters": [
+            31
+          ],
+          "type": "proverb"
+        }
+      ]
+    }
+  ]
+}
