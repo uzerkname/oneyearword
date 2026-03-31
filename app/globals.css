@@ -289,3 +289,98 @@ body {
     opacity: 0;
   }
 }
+
+/* ═══════════════════════════════════════════════════════
+   CONNECTION ARCS — Discussion ↔ Bible links
+   ═══════════════════════════════════════════════════════ */
+
+/* --- Connection highlight colors --- */
+.conn-highlight {
+  padding: 2px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  transition: filter 0.3s ease, background-color 0.3s ease;
+}
+
+.conn-highlight[data-color="gold"] {
+  background: rgba(212, 165, 116, 0.15);
+  border-bottom: 2px solid rgba(212, 165, 116, 0.4);
+}
+.conn-highlight[data-color="sage"] {
+  background: rgba(126, 184, 158, 0.15);
+  border-bottom: 2px solid rgba(126, 184, 158, 0.4);
+}
+.conn-highlight[data-color="rose"] {
+  background: rgba(196, 122, 138, 0.15);
+  border-bottom: 2px solid rgba(196, 122, 138, 0.4);
+}
+.conn-highlight[data-color="violet"] {
+  background: rgba(155, 142, 196, 0.15);
+  border-bottom: 2px solid rgba(155, 142, 196, 0.4);
+}
+.conn-highlight[data-color="copper"] {
+  background: rgba(196, 154, 108, 0.15);
+  border-bottom: 2px solid rgba(196, 154, 108, 0.4);
+}
+
+/* Hover / active glow */
+.conn-highlight.conn-active {
+  filter: brightness(1.3);
+}
+.conn-highlight[data-color="gold"].conn-active { background: rgba(212, 165, 116, 0.3); }
+.conn-highlight[data-color="sage"].conn-active { background: rgba(126, 184, 158, 0.3); }
+.conn-highlight[data-color="rose"].conn-active { background: rgba(196, 122, 138, 0.3); }
+.conn-highlight[data-color="violet"].conn-active { background: rgba(155, 142, 196, 0.3); }
+.conn-highlight[data-color="copper"].conn-active { background: rgba(196, 154, 108, 0.3); }
+
+/* Pulse animation on click-to-scroll target */
+@keyframes conn-pulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
+  100% { filter: brightness(1); }
+}
+.conn-pulse {
+  animation: conn-pulse 0.6s ease-out 2;
+}
+
+/* Anchor dot at top-center of highlight */
+.conn-anchor-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+.conn-highlight[data-color="gold"] .conn-anchor-dot { background: #d4a574; }
+.conn-highlight[data-color="sage"] .conn-anchor-dot { background: #7eb89e; }
+.conn-highlight[data-color="rose"] .conn-anchor-dot { background: #c47a8a; }
+.conn-highlight[data-color="violet"] .conn-anchor-dot { background: #9b8ec4; }
+.conn-highlight[data-color="copper"] .conn-anchor-dot { background: #c49a6c; }
+
+/* Arc breathing animation */
+@keyframes arc-breathe {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.55; }
+}
+
+/* Arc SVG layer promotion */
+.connection-arcs-svg {
+  will-change: transform;
+}
+
+/* Arc fade-out when endpoint scrolls away */
+.arc-path {
+  transition: opacity 0.2s ease;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .conn-pulse { animation: none; }
+  .conn-highlight { transition: none; }
+  .arc-path { animation: none !important; transition: none; }
+}
