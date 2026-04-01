@@ -10,6 +10,7 @@ import NavBar from "./NavBar";
 import SpotifyPlayer from "./SpotifyPlayer";
 import BibleTextPanel from "./BibleTextPanel";
 import DiscussionPanel from "./DiscussionPanel";
+import NotesPanel from "./NotesPanel";
 
 interface DayViewProps {
   day: number;
@@ -24,6 +25,7 @@ export default function DayView({ day }: DayViewProps) {
 
   const [activeConnectionId, setActiveConnectionId] = useState<number | null>(null);
   const [currentBibleTab, setCurrentBibleTab] = useState(0);
+  const [showConnections, setShowConnections] = useState(true);
   const discScrollRef = useRef<HTMLDivElement>(null);
   const bibleScrollRef = useRef<HTMLDivElement>(null);
 
@@ -147,16 +149,23 @@ export default function DayView({ day }: DayViewProps) {
       <div className="h-screen flex flex-col bg-leather-bg">
         <NavBar day={day} />
         <div className="flex-1 flex flex-col lg:flex-row min-h-0 relative">
-          {/* Discussion Panel - 25% */}
-          <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border">
-            <DiscussionPanel
-              transcript={discussion.transcript}
-              connections={discussion.connections}
-              activeConnectionId={activeConnectionId}
-              onConnectionHover={setActiveConnectionId}
-              onConnectionClick={handleConnectionClick}
-              scrollRef={discScrollRef}
-            />
+          {/* Discussion + Notes - 25% */}
+          <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border flex flex-col">
+            <div className="flex-[3] min-h-0">
+              <DiscussionPanel
+                transcript={discussion.transcript}
+                connections={showConnections ? discussion.connections : []}
+                activeConnectionId={showConnections ? activeConnectionId : null}
+                onConnectionHover={setActiveConnectionId}
+                onConnectionClick={handleConnectionClick}
+                scrollRef={discScrollRef}
+                showConnections={showConnections}
+                onToggleConnections={() => setShowConnections(p => !p)}
+              />
+            </div>
+            <div className="flex-[2] min-h-0 border-t border-leather-border">
+              <NotesPanel day={day} />
+            </div>
           </div>
 
           {/* Podcast Panel - 50% */}
@@ -180,8 +189,8 @@ export default function DayView({ day }: DayViewProps) {
             <BibleTextPanel
               readings={dayPlan.readings}
               day={day}
-              connectionVerses={connectionVerses}
-              activeConnectionId={activeConnectionId}
+              connectionVerses={showConnections ? connectionVerses : undefined}
+              activeConnectionId={showConnections ? activeConnectionId : null}
               onConnectionHover={setActiveConnectionId}
               onConnectionClick={handleConnectionClick}
               scrollRef={bibleScrollRef}
@@ -214,17 +223,22 @@ export default function DayView({ day }: DayViewProps) {
           )}
         </div>
 
-        {/* Bible Text Panel - 30% */}
-        <div className="lg:w-[30%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial">
-          {dayPlan ? (
-            <BibleTextPanel readings={dayPlan.readings} day={day} />
-          ) : (
-            <div className="h-full flex items-center justify-center bg-leather-text">
-              <p className="text-leather-muted font-sans">
-                No reading plan for Day {day}
-              </p>
-            </div>
-          )}
+        {/* Bible Text + Notes - 30% */}
+        <div className="lg:w-[30%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial flex flex-col">
+          <div className="flex-[3] min-h-0">
+            {dayPlan ? (
+              <BibleTextPanel readings={dayPlan.readings} day={day} />
+            ) : (
+              <div className="h-full flex items-center justify-center bg-leather-text">
+                <p className="text-leather-muted font-sans">
+                  No reading plan for Day {day}
+                </p>
+              </div>
+            )}
+          </div>
+          <div className="flex-[2] min-h-0 border-t border-leather-border">
+            <NotesPanel day={day} />
+          </div>
         </div>
       </div>
     </div>

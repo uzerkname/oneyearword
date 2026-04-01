@@ -10,6 +10,8 @@ interface DiscussionPanelProps {
   onConnectionHover: (id: number | null) => void;
   onConnectionClick: (id: number, side: "disc" | "bible") => void;
   scrollRef: RefObject<HTMLDivElement | null>;
+  showConnections?: boolean;
+  onToggleConnections?: () => void;
 }
 
 interface Segment {
@@ -157,6 +159,8 @@ export default function DiscussionPanel({
   onConnectionHover,
   onConnectionClick,
   scrollRef,
+  showConnections = true,
+  onToggleConnections,
 }: DiscussionPanelProps) {
   const segments = buildSegments(transcript, connections);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -181,11 +185,35 @@ export default function DiscussionPanel({
         <span className="text-leather-accent font-bold text-xs font-sans uppercase tracking-widest">
           Discussion
         </span>
-        {isMobile && (
-          <span className="text-leather-accent text-sm leading-none">
-            {isExpanded ? "▼" : "▸"}
-          </span>
-        )}
+        <div className="flex items-center gap-2">
+          {onToggleConnections && (
+            <button
+              onClick={(e) => { e.stopPropagation(); onToggleConnections(); }}
+              className="flex items-center gap-1.5 text-xs font-sans transition-colors"
+              title={showConnections ? "Hide scripture highlights" : "Show scripture highlights"}
+            >
+              <span
+                className={`inline-block w-7 h-4 rounded-full relative transition-colors duration-200 ${
+                  showConnections ? "bg-leather-accent/60" : "bg-leather-border"
+                }`}
+              >
+                <span
+                  className={`absolute top-0.5 left-0.5 w-3 h-3 rounded-full bg-white transition-transform duration-200 ${
+                    showConnections ? "translate-x-3" : "translate-x-0"
+                  }`}
+                />
+              </span>
+              <span className={showConnections ? "text-leather-accent/80" : "text-leather-muted"}>
+                Highlights
+              </span>
+            </button>
+          )}
+          {isMobile && (
+            <span className="text-leather-accent text-sm leading-none">
+              {isExpanded ? "▼" : "▸"}
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Scrollable transcript — always visible on desktop, collapsible on mobile */}
