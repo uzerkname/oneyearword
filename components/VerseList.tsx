@@ -187,7 +187,6 @@ function renderVerse(v: Verse, isJesus: boolean, connCtx?: ConnectionContext) {
       onMouseLeave={() => connCtx.onConnectionHover?.(null)}
       onClick={() => connCtx.onConnectionClick?.(conn.id, 'bible')}
     >
-      <span className="conn-anchor-dot" />
       {v.text}
     </span>
   ) : v.text;

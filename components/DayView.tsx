@@ -10,7 +10,6 @@ import NavBar from "./NavBar";
 import SpotifyPlayer from "./SpotifyPlayer";
 import BibleTextPanel from "./BibleTextPanel";
 import DiscussionPanel from "./DiscussionPanel";
-import ConnectionArcs from "./ConnectionArcs";
 
 interface DayViewProps {
   day: number;
@@ -25,7 +24,6 @@ export default function DayView({ day }: DayViewProps) {
 
   const [activeConnectionId, setActiveConnectionId] = useState<number | null>(null);
   const [currentBibleTab, setCurrentBibleTab] = useState(0);
-  const mainRef = useRef<HTMLDivElement>(null);
   const discScrollRef = useRef<HTMLDivElement>(null);
   const bibleScrollRef = useRef<HTMLDivElement>(null);
 
@@ -148,10 +146,7 @@ export default function DayView({ day }: DayViewProps) {
     return (
       <div className="h-screen flex flex-col bg-leather-bg">
         <NavBar day={day} />
-        <div
-          ref={mainRef}
-          className="flex-1 flex flex-col lg:flex-row min-h-0 relative"
-        >
+        <div className="flex-1 flex flex-col lg:flex-row min-h-0 relative">
           {/* Discussion Panel - 25% */}
           <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border">
             <DiscussionPanel
@@ -196,14 +191,6 @@ export default function DayView({ day }: DayViewProps) {
             />
           </div>
 
-          {/* Arc overlay */}
-          <ConnectionArcs
-            connections={discussion.connections}
-            activeConnectionId={activeConnectionId}
-            containerRef={mainRef}
-            discScrollRef={discScrollRef}
-            bibleScrollRef={bibleScrollRef}
-          />
         </div>
       </div>
     );

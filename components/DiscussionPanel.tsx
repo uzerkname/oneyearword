@@ -217,7 +217,6 @@ export default function DiscussionPanel({
                   onMouseLeave={() => onConnectionHover(null)}
                   onClick={() => onConnectionClick(seg.connectionId!, "disc")}
                 >
-                  <span className="conn-anchor-dot" />
                   {seg.text}
                   {/* Mobile inline badge */}
                   {isMobile && seg.bibleRef && (
