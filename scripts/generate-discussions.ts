@@ -525,10 +525,10 @@ async function extractDiscussions(
   // Post-process: strip any remaining opening/closing patterns Claude missed
   parsed.transcript = parsed.transcript
     .replace(/^In the name of the Father[^.]*\.\s*/i, "")
-    .replace(/\s*(So\s+)?praise\s+the\s+lord\.?\s*Thank\s+you\s+so\s+much.*$/is, "")
-    .replace(/\s*My\s+name\s+is\s+Father\s+Mike.*$/is, "")
-    .replace(/\s*I\s+cannot\s+wait\s+to\s+see\s+you\s+tomorrow.*$/is, "")
-    .replace(/\s*Please\.?\s*Please\.?\s*pray\s+for\s+me.*$/is, "")
+    .replace(/\s*(So\s+)?praise\s+the\s+lord\.?\s*Thank\s+you\s+so\s+much.*$/i, "")
+    .replace(/\s*My\s+name\s+is\s+Father\s+Mike.*$/i, "")
+    .replace(/\s*I\s+cannot\s+wait\s+to\s+see\s+you\s+tomorrow.*$/i, "")
+    .replace(/\s*Please\.?\s*Please\.?\s*pray\s+for\s+me.*$/i, "")
     .replace(/\s*God\s+bless\.?\s*$/i, "")
     .trim();
 
