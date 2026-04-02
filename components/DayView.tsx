@@ -206,7 +206,16 @@ export default function DayView({ day }: DayViewProps) {
               <Panel defaultSize={60} minSize={15}>
                 {discussionContent}
               </Panel>
-              <PanelResizeHandle className="resize-handle" />
+              <PanelResizeHandle
+                style={{
+                  height: 4,
+                  background: "var(--color-leather-border)",
+                  transition: "background 0.2s ease",
+                  cursor: "row-resize",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-leather-accent)")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "var(--color-leather-border)")}
+              />
               <Panel defaultSize={40} minSize={15}>
                 <NotesPanel day={day} />
               </Panel>
