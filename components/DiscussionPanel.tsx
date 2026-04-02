@@ -105,11 +105,11 @@ function getAbbrev(book: string): string {
 }
 
 const COLOR_PILL: Record<Connection["color"], string> = {
-  gold: "#d4a574",
+  teal: "#5ea8a0",
   sage: "#7eb89e",
   rose: "#c47a8a",
   violet: "#9b8ec4",
-  copper: "#c49a6c",
+  amber: "#c48a4a",
 };
 
 function buildSegments(
