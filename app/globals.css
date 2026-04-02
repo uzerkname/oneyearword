@@ -303,9 +303,9 @@ body {
   transition: filter 0.3s ease, background-color 0.3s ease;
 }
 
-.conn-highlight[data-color="gold"] {
-  background: rgba(212, 165, 116, 0.15);
-  border-bottom: 2px solid rgba(212, 165, 116, 0.4);
+.conn-highlight[data-color="teal"] {
+  background: rgba(94, 168, 160, 0.15);
+  border-bottom: 2px solid rgba(94, 168, 160, 0.4);
 }
 .conn-highlight[data-color="sage"] {
   background: rgba(126, 184, 158, 0.15);
@@ -319,20 +319,30 @@ body {
   background: rgba(155, 142, 196, 0.15);
   border-bottom: 2px solid rgba(155, 142, 196, 0.4);
 }
-.conn-highlight[data-color="copper"] {
-  background: rgba(196, 154, 108, 0.15);
-  border-bottom: 2px solid rgba(196, 154, 108, 0.4);
+.conn-highlight[data-color="amber"] {
+  background: rgba(196, 138, 74, 0.15);
+  border-bottom: 2px solid rgba(196, 138, 74, 0.4);
+}
+
+/* When connection highlight is inside Jesus' words, inherit the gradient text */
+.verse-jesus .conn-highlight {
+  background: inherit !important;
+  background-size: inherit !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 /* Hover / active glow */
 .conn-highlight.conn-active {
   filter: brightness(1.3);
 }
-.conn-highlight[data-color="gold"].conn-active { background: rgba(212, 165, 116, 0.3); }
+.conn-highlight[data-color="teal"].conn-active { background: rgba(94, 168, 160, 0.3); }
 .conn-highlight[data-color="sage"].conn-active { background: rgba(126, 184, 158, 0.3); }
 .conn-highlight[data-color="rose"].conn-active { background: rgba(196, 122, 138, 0.3); }
 .conn-highlight[data-color="violet"].conn-active { background: rgba(155, 142, 196, 0.3); }
-.conn-highlight[data-color="copper"].conn-active { background: rgba(196, 154, 108, 0.3); }
+.conn-highlight[data-color="amber"].conn-active { background: rgba(196, 138, 74, 0.3); }
 
 /* Pulse animation on click-to-scroll target */
 @keyframes conn-pulse {

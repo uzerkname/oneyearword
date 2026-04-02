@@ -86,7 +86,7 @@ export interface BibleRef {
 
 export interface Connection {
   id: number;
-  color: 'gold' | 'sage' | 'rose' | 'violet' | 'copper';
+  color: 'teal' | 'sage' | 'rose' | 'violet' | 'amber';
   discussion: DiscussionSpan;
   bible: BibleRef;
 }

@@ -1,0 +1,102 @@
+{
+  "day": 260,
+  "transcript": "Here is Matthew's Gospel, chapters 8, 9, and 10. There are a couple of notable things here. Basically what we have is a bunch of miracles \u2014 Jesus is healing everywhere. Actually, let me clarify: he's not healing all over the place. In fact, he spends roughly 80 percent of his public ministry in a five-mile radius around the Sea of Galilee, with Capernaum as his home base. Matthew even says \"he came to his own city.\" Obviously Jesus is from Nazareth, but he makes Capernaum his home base and does ministry from there.\n\nWhat we saw today is all of these healings, and this is really important: why would Jesus be healing so much? We recognize that in John's Gospel, John referred to those healings as signs and wonders \u2014 meaning they pointed to Jesus's identity. We even have the story of the paralytic who is brought by his friends to Jesus, and Jesus says, \"Your sins are forgiven.\" Then to prove that he has the authority to forgive sins on earth, he says, \"Rise, take up your mat, and walk.\" In that moment, he's revealing that he's not just another healer or another prophet \u2014 Jesus actually is the incarnation of God himself.\n\nThat's so powerful. We've gone through most of the Old Testament already. We've heard almost all of the prophets, and we realize Jesus is more than a prophet. In chapter eight, Matthew writes that Jesus is fulfilling what was spoken by the prophet Isaiah: \"He took our infirmities and bore our diseases.\" He is the fulfillment of God's promise that the Messiah would come with healing in his wings. And what do we have? The story of the woman with a hemorrhage for twelve years who wants to just touch the hem of his garment, because the Messiah would come with healing in his wings.\n\nIt's important to note that Jesus doesn't just heal physical ailments. Scripture makes a very distinct point of noting that Jesus healed physical illness, he healed mental illness, and he also set people free from demonic oppression. There are at least three different categories of healing that Jesus offers. And one of the things revealed in that is that Jesus is here to establish the kingdom of God, which is not simply uniting people under one banner of faith. It involves first defeating the kingdom of darkness.\n\nWhen Jesus encounters someone possessed by the evil one, he is fighting for them, saying, \"You no longer belong to the kingdom of darkness. I am transferring you to my kingdom.\" That's so important for us to understand. When we were born, someone else had a claim on us \u2014 the ruler of this world, the evil one. That's one of the reasons why the rite of baptism often includes an exorcism: Satan is defeated by God's grace, by Jesus Christ, by the Holy Spirit, and we are transferred from his possession to the kingdom of God. God now has a claim on us.\n\nOne of those claims is exercised here in the call of Matthew in chapter nine. It's remarkable \u2014 here is Matthew inserting this moment from his own life. He was an enemy of the Jewish people, even though he was Jewish himself, because he was working for the Romans as a tax collector. And Jesus walks up to the tax office and simply says, \"Follow me.\" Whatever our past is, the Lord Jesus comes into our present and wants to offer us a new future.\n\nThen in chapter ten, the twelve disciples are sent on mission, and their mission is to basically do what Jesus did. This is so important: for those of us who are Christians, we don't just follow Christ because we believe in him. We're called to do what he did on this earth. The disciples of Jesus aren't simply called to believe in him or even just to follow him, but to do what he did in this world.\n\nBut following him comes with a cost. Jesus points out in chapter ten: \"I did not come to bring peace, but a sword\" \u2014 father against son, daughter against mother, families turning each other over. We've seen this throughout history: families split because someone is trying to follow Jesus and others don't accept it. In the first centuries of the Church, during Roman persecutions, fathers handed over their children and children handed over their parents because they believed in Christ. This happened in Japan, in China, and all around the world.\n\nIs there a threat of that happening now? If following Jesus means we live a certain way and believe certain things about human nature, could there be divisions growing between Christians and the broader culture? We have to pray for each other and lift each other up, because it is so hard when families become divided. And yet we can't abandon our faith. Jesus has called us to be faithful, to be witnesses, and to take up our cross.\n\nThis is one of the things that made such an impression on me, even back in high school: \"He who does not take up his cross and follow me is not worthy of me. He who finds his life will lose it, and he who loses his life for my sake will find it.\" We live in a difficult and dangerous world, but Jesus says, \"Have no fear.\" Even if everything seems confusing, even if families are divided and friends become enemies \u2014 have no fear, because you matter to God. \"Are not two sparrows sold for a penny? And not one of them will fall to the ground without your Father's will. Even the hairs of your head are numbered. Fear not \u2014 you are of more value than many sparrows.\"\n\nSo have no fear. Pick up your cross and follow him.",
+  "connections": [
+    {
+      "id": 1,
+      "color": "teal",
+      "discussion": {
+        "text": "he came to his own city"
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 9,
+        "verse": 1
+      }
+    },
+    {
+      "id": 2,
+      "color": "sage",
+      "discussion": {
+        "text": "the paralytic who is brought by his friends to Jesus, and Jesus says, \"Your sins are forgiven.\""
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 9,
+        "verse": 2
+      }
+    },
+    {
+      "id": 3,
+      "color": "rose",
+      "discussion": {
+        "text": "he has the authority to forgive sins on earth"
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 9,
+        "verse": 6
+      }
+    },
+    {
+      "id": 4,
+      "color": "violet",
+      "discussion": {
+        "text": "He took our infirmities and bore our diseases"
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 8,
+        "verse": 17
+      }
+    },
+    {
+      "id": 5,
+      "color": "amber",
+      "discussion": {
+        "text": "the woman with a hemorrhage for twelve years"
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 9,
+        "verse": 20
+      }
+    },
+    {
+      "id": 6,
+      "color": "teal",
+      "discussion": {
+        "text": "Jesus walks up to the tax office and simply says, \"Follow me.\""
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 9,
+        "verse": 9
+      }
+    },
+    {
+      "id": 7,
+      "color": "sage",
+      "discussion": {
+        "text": "I did not come to bring peace, but a sword"
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 10,
+        "verse": 34
+      }
+    },
+    {
+      "id": 8,
+      "color": "rose",
+      "discussion": {
+        "text": "He who does not take up his cross and follow me is not worthy of me. He who finds his life will lose it, and he who loses his life for my sake will find it."
+      },
+      "bible": {
+        "book": "Matthew",
+        "chapter": 10,
+        "verse": 38
+      }
+    }
+  ]
+}

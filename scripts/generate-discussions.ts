@@ -1,16 +1,20 @@
 /**
  * generate-discussions.ts
  *
- * Build-time pipeline: RSS → Whisper transcription → Claude discussion extraction → JSON
+ * Build-time pipeline: RSS → local Whisper transcription → Claude discussion extraction → JSON
  *
  * Usage:
  *   npx tsx scripts/generate-discussions.ts            # process all 365 days
  *   npx tsx scripts/generate-discussions.ts --day 1   # process a single day
  *   npx tsx scripts/generate-discussions.ts --force   # overwrite existing output
+ *   npx tsx scripts/generate-discussions.ts --whisper-model small.en  # choose model
  *
  * Required env vars:
- *   OPENAI_API_KEY      — for Whisper transcription
  *   ANTHROPIC_API_KEY   — for Claude discussion extraction
+ *
+ * Prerequisites:
+ *   python + openai-whisper (pip install openai-whisper)
+ *   ffmpeg (winget install Gyan.FFmpeg)
  *
  * RSS feed note:
  *   "The Bible in a Year (with Fr. Mike Schmitz)" by Ascension Press.
@@ -20,21 +24,17 @@
  */
 
 import { mkdirSync, existsSync, writeFileSync, readFileSync, unlinkSync } from "fs";
-import { resolve, join } from "path";
+import { resolve, join, basename } from "path";
 import { tmpdir } from "os";
+import { execSync } from "child_process";
 
 // ---------------------------------------------------------------------------
 // Configuration
 // ---------------------------------------------------------------------------
 
-const RSS_URL =
-  // TODO: Verify this URL is current. Ascension Press has published their feed
-  // at this address, but if requests fail, replace with the current feed URL.
-  // You can find it by searching "Bible in a Year Fr. Mike Schmitz podcast RSS"
-  // or visiting: https://podcasts.apple.com/us/podcast/the-bible-in-a-year/id1539568321
-  "https://feeds.podbean.com/biblebreakdown/feed.xml";
+const RSS_URL = "https://bibleinayear.fireside.fm/rss";
 
-const COLORS = ["gold", "sage", "rose", "violet", "copper"] as const;
+const COLORS = ["teal", "sage", "rose", "violet", "amber"] as const;
 type Color = (typeof COLORS)[number];
 
 const ROOT = resolve(__dirname, "..");
@@ -106,10 +106,13 @@ interface DiscussionData {
 // CLI argument parsing
 // ---------------------------------------------------------------------------
 
-function parseArgs(): { days: number[]; force: boolean } {
+function parseArgs(): { days: number[]; force: boolean; whisperModel: string } {
   const args = process.argv.slice(2);
   const force = args.includes("--force");
+
   const dayIdx = args.indexOf("--day");
+  const modelIdx = args.indexOf("--whisper-model");
+  const whisperModel = modelIdx !== -1 ? args[modelIdx + 1] : "base.en";
 
   if (dayIdx !== -1) {
     const dayVal = parseInt(args[dayIdx + 1], 10);
@@ -117,11 +120,11 @@ function parseArgs(): { days: number[]; force: boolean } {
       console.error("--day must be a number between 1 and 365");
       process.exit(1);
     }
-    return { days: [dayVal], force };
+    return { days: [dayVal], force, whisperModel };
   }
 
   // All 365 days
-  return { days: Array.from({ length: 365 }, (_, i) => i + 1), force };
+  return { days: Array.from({ length: 365 }, (_, i) => i + 1), force, whisperModel };
 }
 
 // ---------------------------------------------------------------------------
@@ -246,37 +249,79 @@ async function downloadMp3(audioUrl: string, dayNumber: number): Promise<string>
 }
 
 // ---------------------------------------------------------------------------
-// Step 2: Whisper transcription
+// Step 2: Local Whisper transcription
 // ---------------------------------------------------------------------------
 
-async function transcribeAudio(
-  mp3Path: string,
-  openaiKey: string
-): Promise<string> {
-  const fileBuffer = readFileSync(mp3Path);
-  const blob = new Blob([fileBuffer], { type: "audio/mpeg" });
+// Find ffmpeg — check common install locations if not on PATH
+function findFfmpegDir(): string | null {
+  const candidates = [
+    join(
+      process.env.LOCALAPPDATA || "",
+      "Microsoft/WinGet/Packages"
+    ),
+  ];
+  for (const base of candidates) {
+    if (!existsSync(base)) continue;
+    try {
+      const entries = require("fs").readdirSync(base) as string[];
+      for (const entry of entries) {
+        if (entry.toLowerCase().includes("ffmpeg")) {
+          const binDir = join(base, entry, "ffmpeg-8.1-full_build", "bin");
+          if (existsSync(join(binDir, "ffmpeg.exe"))) return binDir;
+          // Try without version suffix
+          const entries2 = require("fs").readdirSync(join(base, entry)) as string[];
+          for (const e2 of entries2) {
+            const altBin = join(base, entry, e2, "bin");
+            if (existsSync(join(altBin, "ffmpeg.exe"))) return altBin;
+          }
+        }
+      }
+    } catch { /* ignore */ }
+  }
+  return null;
+}
 
-  const formData = new FormData();
-  formData.append("file", blob, "audio.mp3");
-  formData.append("model", "whisper-1");
-  formData.append("response_format", "text");
+let _ffmpegDir: string | null | undefined;
+function getFfmpegEnv(): Record<string, string> {
+  if (_ffmpegDir === undefined) {
+    _ffmpegDir = findFfmpegDir();
+    if (_ffmpegDir) console.log(`  [ffmpeg] Found at: ${_ffmpegDir}`);
+  }
+  if (!_ffmpegDir) return { ...process.env } as Record<string, string>;
+  const env = { ...process.env } as Record<string, string>;
+  env.PATH = `${_ffmpegDir};${env.PATH || ""}`;
+  return env;
+}
 
-  const res = await fetch("https://api.openai.com/v1/audio/transcriptions", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${openaiKey}`,
-      // Content-Type is set automatically by fetch when using FormData
-    },
-    body: formData,
+function transcribeAudio(mp3Path: string, model: string): string {
+  const outDir = join(tmpdir(), `whisper-out-${Date.now()}`);
+  mkdirSync(outDir, { recursive: true });
+
+  const cmd = `python -m whisper "${mp3Path}" --model ${model} --output_format txt --output_dir "${outDir}"`;
+  console.log(`  [whisper] Running: python -m whisper ... --model ${model}`);
+
+  execSync(cmd, {
+    stdio: ["ignore", "pipe", "pipe"],
+    timeout: 30 * 60 * 1000, // 30 min timeout for long episodes
+    env: getFfmpegEnv(),
   });
 
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Whisper API error ${res.status}: ${body}`);
+  // Whisper outputs a .txt file named after the input file
+  const inputBasename = basename(mp3Path, ".mp3");
+  const txtPath = join(outDir, `${inputBasename}.txt`);
+
+  if (!existsSync(txtPath)) {
+    throw new Error(`Whisper output not found at ${txtPath}`);
   }
 
-  // response_format=text returns plain text
-  return await res.text();
+  const transcript = readFileSync(txtPath, "utf-8").trim();
+
+  // Clean up output dir
+  try {
+    unlinkSync(txtPath);
+  } catch { /* ignore */ }
+
+  return transcript;
 }
 
 // ---------------------------------------------------------------------------
@@ -355,25 +400,67 @@ Here is the Bible text for today's readings:
 ${bibleText}
 </bible_text>
 
-Here is the full podcast transcript:
+Here is the full podcast transcript (raw audio transcription, may contain errors):
 <transcript>
 ${transcript}
 </transcript>
 
 Your task has two parts:
 
-PART 1: Extract only the discussion/reflection segment from the transcript.
-- Skip: episode intro, scripture readings, prayers, closing blessings
-- Keep: Fr. Mike's commentary, reflection, and discussion of the readings
+PART 1: Extract and clean up the discussion/reflection segment.
+
+REMOVE completely:
+- Opening prayers, sign-of-the-cross ("In the name of the Father...")
+- Scripture readings read aloud verbatim
+- Closing blessings, sign-offs ("My name is Father Mike", "please pray for me", "I cannot wait to see you tomorrow", "god bless")
+- Episode number references ("Day 258", "we have 105 days left")
+
+KEEP: Fr. Mike's commentary, reflection, and discussion of the readings.
+
+CLEAN UP for readability (closed-caption style):
+- Remove filler words: "um", "uh", "you know", "like", "I mean", "gosh", "right?"
+- Fix false starts, stammering, and repeated phrases (e.g. "he came to his own city came to his city" → "he came to his own city")
+- Fix obvious transcription errors for biblical terms: myrrh (not "murk"), Naphtali (not "Naftali"), Capernaum (not "kapurnum"), Isaiah (not "Isiah"), Zerah (not "Hezron" if context indicates)
+- Add proper punctuation, capitalization, and paragraph breaks
+- Use \\n\\n between paragraphs for readability
+- Preserve the speaker's meaning and voice, but make it read like professional closed captions — not a verbatim dump
 
 PART 2: Map phrases from the discussion to specific Bible verse references.
 - Find 3-8 meaningful connections where a phrase in the discussion clearly relates to a specific verse
-- Each connection must use an EXACT substring from the extracted discussion text
+- Each connection must use an EXACT substring from your cleaned transcript text in the "transcript" field
 - Each Bible reference must be from today's readings listed above
+- Connection text should be meaningful theological phrases that read well as standalone highlights — not casual conversational fragments
+- Prefer phrases that quote or closely paraphrase Scripture, or that capture a key theological insight
+
+<example>
+Here is an example of the expected output quality (from Day 258, Matthew 1-4 + Proverbs 18):
+{
+  "transcript": "Proverbs chapter 18, verse 17: \\"He who states his case first seems right, until the other comes and examines him.\\" There's something about that that's just wise...\\n\\nWe got introduced today to the beginning of the Gospel of Matthew...",
+  "connections": [
+    {
+      "discussion": { "text": "He who states his case first seems right, until the other comes and examines him" },
+      "bible": { "book": "Proverbs", "chapter": 18, "verse": 17 }
+    },
+    {
+      "discussion": { "text": "Being a righteous man, he decided to divorce her quietly" },
+      "bible": { "book": "Matthew", "chapter": 1, "verse": 19 }
+    },
+    {
+      "discussion": { "text": "gold, frankincense, and myrrh" },
+      "bible": { "book": "Matthew", "chapter": 2, "verse": 11 }
+    },
+    {
+      "discussion": { "text": "Repent, for the kingdom of heaven is at hand" },
+      "bible": { "book": "Matthew", "chapter": 4, "verse": 17 }
+    }
+  ]
+}
+Notice: clean punctuation, no filler words, paragraph breaks, connection texts are meaningful standalone phrases.
+</example>
 
 Return your response as a JSON object with exactly this structure (no markdown, no extra text):
 {
-  "transcript": "<the extracted discussion/reflection text only>",
+  "transcript": "<the cleaned discussion/reflection text>",
   "connections": [
     {
       "discussion": { "text": "<exact substring from the transcript field above>" },
@@ -401,7 +488,7 @@ async function extractDiscussions(
     },
     body: JSON.stringify({
       model: "claude-opus-4-5",
-      max_tokens: 4096,
+      max_tokens: 8192,
       messages: [{ role: "user", content: prompt }],
     }),
   });
@@ -433,6 +520,24 @@ async function extractDiscussions(
 
   if (!parsed.transcript || !Array.isArray(parsed.connections)) {
     throw new Error("Claude response missing required fields");
+  }
+
+  // Post-process: strip any remaining opening/closing patterns Claude missed
+  parsed.transcript = parsed.transcript
+    .replace(/^In the name of the Father[^.]*\.\s*/i, "")
+    .replace(/\s*(So\s+)?praise\s+the\s+lord\.?\s*Thank\s+you\s+so\s+much.*$/is, "")
+    .replace(/\s*My\s+name\s+is\s+Father\s+Mike.*$/is, "")
+    .replace(/\s*I\s+cannot\s+wait\s+to\s+see\s+you\s+tomorrow.*$/is, "")
+    .replace(/\s*Please\.?\s*Please\.?\s*pray\s+for\s+me.*$/is, "")
+    .replace(/\s*God\s+bless\.?\s*$/i, "")
+    .trim();
+
+  // Warn on unusual transcript length
+  if (parsed.transcript.length < 500) {
+    console.warn(`  [warn] Transcript is very short (${parsed.transcript.length} chars)`);
+  }
+  if (parsed.transcript.length > 15000) {
+    console.warn(`  [warn] Transcript is very long (${parsed.transcript.length} chars)`);
   }
 
   // Validate connections: discussion text must be substring of transcript,
@@ -495,7 +600,7 @@ async function processDay(
   rssEpisodes: Map<number, RssEpisode>,
   readingPlan: ReadingPlan,
   bookIndex: BookIndex,
-  openaiKey: string,
+  whisperModel: string,
   anthropicKey: string,
   force: boolean
 ): Promise<"processed" | "skipped" | "failed"> {
@@ -518,7 +623,7 @@ async function processDay(
     return "failed";
   }
 
-  process.stdout.write(`Processing day ${dayNumber}... `);
+  console.log(`Processing day ${dayNumber}...`);
   let mp3Path: string | null = null;
 
   try {
@@ -528,14 +633,11 @@ async function processDay(
       `day-${dayNumber}/download`
     );
 
-    // Transcribe
-    await sleep(1000); // rate limit between API calls
-    const transcript = await withRetry(
-      () => transcribeAudio(mp3Path!, openaiKey),
-      `day-${dayNumber}/whisper`
-    );
+    // Transcribe locally with Whisper
+    const transcript = transcribeAudio(mp3Path, whisperModel);
+    console.log(`  [whisper] Transcribed ${transcript.length} chars`);
 
-    // Extract discussions
+    // Extract discussions via Claude
     await sleep(1000);
     const data = await withRetry(
       () => extractDiscussions(transcript, dayPlan, bookIndex, anthropicKey),
@@ -544,11 +646,11 @@ async function processDay(
 
     // Write output
     writeFileSync(outputPath, JSON.stringify(data, null, 2));
-    console.log(`done (${data.connections.length} connections)`);
+    console.log(`  Done (${data.connections.length} connections)`);
     return "processed";
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
-    console.log(`FAILED: ${msg}`);
+    console.log(`  FAILED: ${msg}`);
     return "failed";
   } finally {
     // Clean up temp file
@@ -567,9 +669,11 @@ async function processDay(
 // ---------------------------------------------------------------------------
 
 async function main() {
-  const { days, force } = parseArgs();
-  const openaiKey = requireEnv("OPENAI_API_KEY");
+  const { days, force, whisperModel } = parseArgs();
   const anthropicKey = requireEnv("ANTHROPIC_API_KEY");
+
+  console.log(`Whisper model: ${whisperModel}`);
+  console.log(`Days to process: ${days.length === 365 ? "all 365" : days.join(", ")}`);
 
   // Ensure output directory exists
   mkdirSync(DISCUSSIONS_DIR, { recursive: true });
@@ -602,7 +706,7 @@ async function main() {
       rssEpisodes,
       readingPlan,
       bookIndex,
-      openaiKey,
+      whisperModel,
       anthropicKey,
       force
     );
@@ -616,7 +720,7 @@ async function main() {
       counts.processed++;
     }
 
-    // Rate limiting between days
+    // Rate limiting between days (for Claude API)
     if (result === "processed" && dayNumber !== days[days.length - 1]) {
       await sleep(1000);
     }
