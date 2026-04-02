@@ -282,13 +282,13 @@ function findFfmpegDir(): string | null {
 }
 
 let _ffmpegDir: string | null | undefined;
-function getFfmpegEnv(): Record<string, string> {
+function getFfmpegEnv(): NodeJS.ProcessEnv {
   if (_ffmpegDir === undefined) {
     _ffmpegDir = findFfmpegDir();
     if (_ffmpegDir) console.log(`  [ffmpeg] Found at: ${_ffmpegDir}`);
   }
-  if (!_ffmpegDir) return { ...process.env } as Record<string, string>;
-  const env = { ...process.env } as Record<string, string>;
+  if (!_ffmpegDir) return { ...process.env };
+  const env = { ...process.env };
   env.PATH = `${_ffmpegDir};${env.PATH || ""}`;
   return env;
 }
