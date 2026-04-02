@@ -6,7 +6,7 @@ import { getDayPlan } from "@/lib/reading-plan";
 import { getPodcastForDay } from "@/lib/podcast-catalog";
 import { getDiscussionForDay } from "@/lib/discussion-data";
 import { setLastVisitedDay } from "@/lib/storage";
-import { Panel, Group as PanelGroup, Separator as PanelResizeHandle } from "react-resizable-panels";
+import { Panel, Group as PanelGroup, Separator as PanelResizeHandle, type Layout } from "react-resizable-panels";
 import NavBar from "./NavBar";
 import SpotifyPlayer from "./SpotifyPlayer";
 import BibleTextPanel from "./BibleTextPanel";
@@ -37,6 +37,21 @@ export default function DayView({ day }: DayViewProps) {
     const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
     mql.addEventListener("change", handler);
     return () => mql.removeEventListener("change", handler);
+  }, []);
+
+  const LAYOUT_KEY = "discussion-notes-split";
+  const [savedLayout, setSavedLayout] = useState<Layout | undefined>(undefined);
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(LAYOUT_KEY);
+      if (raw) setSavedLayout(JSON.parse(raw));
+    } catch {}
+  }, []);
+
+  const handleLayoutChanged = useCallback((layout: Layout) => {
+    try {
+      localStorage.setItem(LAYOUT_KEY, JSON.stringify(layout));
+    } catch {}
   }, []);
 
   useEffect(() => {
@@ -186,7 +201,7 @@ export default function DayView({ day }: DayViewProps) {
         {/* Discussion + Notes - 25% */}
         <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border flex flex-col">
           {isDesktop ? (
-            <PanelGroup orientation="vertical" id="discussion-notes-split">
+            <PanelGroup orientation="vertical" id="discussion-notes-split" defaultLayout={savedLayout} onLayoutChanged={handleLayoutChanged}>
               <Panel defaultSize={60} minSize={15}>
                 {discussionContent}
               </Panel>
