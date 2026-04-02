@@ -6,6 +6,7 @@ import { getDayPlan } from "@/lib/reading-plan";
 import { getPodcastForDay } from "@/lib/podcast-catalog";
 import { getDiscussionForDay } from "@/lib/discussion-data";
 import { setLastVisitedDay } from "@/lib/storage";
+import { Panel, Group as PanelGroup, Separator as PanelResizeHandle } from "react-resizable-panels";
 import NavBar from "./NavBar";
 import SpotifyPlayer from "./SpotifyPlayer";
 import BibleTextPanel from "./BibleTextPanel";
@@ -28,6 +29,15 @@ export default function DayView({ day }: DayViewProps) {
   const [showConnections, setShowConnections] = useState(true);
   const discScrollRef = useRef<HTMLDivElement>(null);
   const bibleScrollRef = useRef<HTMLDivElement>(null);
+
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 1024px)");
+    setIsDesktop(mql.matches);
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, []);
 
   useEffect(() => {
     setLastVisitedDay(day);
@@ -143,49 +153,79 @@ export default function DayView({ day }: DayViewProps) {
     );
   }
 
-  // Three-column layout when discussion data AND dayPlan exist
-  if (discussion && dayPlan) {
-    return (
-      <div className="h-screen flex flex-col bg-leather-bg">
-        <NavBar day={day} />
-        <div className="flex-1 flex flex-col lg:flex-row min-h-0 relative">
-          {/* Discussion + Notes - 25% */}
-          <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border flex flex-col">
-            <div className="flex-[3] min-h-0">
-              <DiscussionPanel
-                transcript={discussion.transcript}
-                connections={showConnections ? discussion.connections : []}
-                activeConnectionId={showConnections ? activeConnectionId : null}
-                onConnectionHover={setActiveConnectionId}
-                onConnectionClick={handleConnectionClick}
-                scrollRef={discScrollRef}
-                showConnections={showConnections}
-                onToggleConnections={() => setShowConnections(p => !p)}
-              />
-            </div>
-            <div className="flex-[2] min-h-0 border-t border-leather-border">
-              <NotesPanel day={day} />
-            </div>
-          </div>
+  const discussionContent = discussion && dayPlan ? (
+    <DiscussionPanel
+      transcript={discussion.transcript}
+      connections={showConnections ? discussion.connections : []}
+      activeConnectionId={showConnections ? activeConnectionId : null}
+      onConnectionHover={setActiveConnectionId}
+      onConnectionClick={handleConnectionClick}
+      scrollRef={discScrollRef}
+      showConnections={showConnections}
+      onToggleConnections={() => setShowConnections(p => !p)}
+    />
+  ) : (
+    <div className="flex flex-col h-full bg-leather-text">
+      <div className="flex items-center border-b border-leather-border bg-leather-text px-4 py-2">
+        <span className="text-leather-accent font-bold text-xs font-sans uppercase tracking-widest">
+          Discussion
+        </span>
+      </div>
+      <div className="flex-1 flex items-center justify-center">
+        <p className="text-leather-muted font-sans text-sm">
+          No discussion available for Day {day}
+        </p>
+      </div>
+    </div>
+  );
 
-          {/* Podcast Panel - 50% */}
-          <div className="order-1 lg:order-2 lg:w-[50%] w-full lg:h-full">
-            {podcast ? (
-              <SpotifyPlayer
-                episodeId={podcast.episodeId}
-                title={podcast.title}
-              />
-            ) : (
-              <div className="w-full h-full bg-leather-video flex items-center justify-center">
-                <p className="text-leather-muted font-sans">
-                  No podcast episode available for Day {day}
-                </p>
+  return (
+    <div className="h-screen flex flex-col bg-leather-bg">
+      <NavBar day={day} />
+      <div className="flex-1 flex flex-col lg:flex-row min-h-0 relative">
+        {/* Discussion + Notes - 25% */}
+        <div className="order-2 lg:order-1 lg:w-[25%] w-full lg:h-full border-r border-leather-border flex flex-col">
+          {isDesktop ? (
+            <PanelGroup orientation="vertical" id="discussion-notes-split">
+              <Panel defaultSize={60} minSize={15}>
+                {discussionContent}
+              </Panel>
+              <PanelResizeHandle className="resize-handle" />
+              <Panel defaultSize={40} minSize={15}>
+                <NotesPanel day={day} />
+              </Panel>
+            </PanelGroup>
+          ) : (
+            <>
+              <div className="flex-[3] min-h-0">
+                {discussionContent}
               </div>
-            )}
-          </div>
+              <div className="flex-[2] min-h-0 border-t border-leather-border">
+                <NotesPanel day={day} />
+              </div>
+            </>
+          )}
+        </div>
 
-          {/* Bible Text Panel - 25% */}
-          <div className="order-3 lg:order-3 lg:w-[25%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial">
+        {/* Podcast Panel - 50% */}
+        <div className="order-1 lg:order-2 lg:w-[50%] w-full lg:h-full">
+          {podcast ? (
+            <SpotifyPlayer
+              episodeId={podcast.episodeId}
+              title={podcast.title}
+            />
+          ) : (
+            <div className="w-full h-full bg-leather-video flex items-center justify-center">
+              <p className="text-leather-muted font-sans">
+                No podcast episode available for Day {day}
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* Bible Text Panel - 25% */}
+        <div className="order-3 lg:order-3 lg:w-[25%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial">
+          {dayPlan ? (
             <BibleTextPanel
               readings={dayPlan.readings}
               day={day}
@@ -198,48 +238,15 @@ export default function DayView({ day }: DayViewProps) {
               setActiveTab={(i) => setCurrentBibleTab(i)}
               onActiveTabChange={setCurrentBibleTab}
             />
-          </div>
-
-        </div>
-      </div>
-    );
-  }
-
-  // Fallback: existing 2-column layout (70/30)
-  return (
-    <div className="h-screen flex flex-col bg-leather-bg">
-      <NavBar day={day} />
-      <div className="flex-1 flex flex-col lg:flex-row min-h-0">
-        {/* Podcast Panel - 70% */}
-        <div className="lg:w-[70%] w-full lg:h-full">
-          {podcast ? (
-            <SpotifyPlayer episodeId={podcast.episodeId} title={podcast.title} />
           ) : (
-            <div className="w-full h-full bg-leather-video flex items-center justify-center">
+            <div className="h-full flex items-center justify-center bg-leather-text">
               <p className="text-leather-muted font-sans">
-                No podcast episode available for Day {day}
+                No reading plan for Day {day}
               </p>
             </div>
           )}
         </div>
 
-        {/* Bible Text + Notes - 30% */}
-        <div className="lg:w-[30%] w-full lg:h-full border-l border-leather-border flex-1 lg:flex-initial flex flex-col">
-          <div className="flex-[3] min-h-0">
-            {dayPlan ? (
-              <BibleTextPanel readings={dayPlan.readings} day={day} />
-            ) : (
-              <div className="h-full flex items-center justify-center bg-leather-text">
-                <p className="text-leather-muted font-sans">
-                  No reading plan for Day {day}
-                </p>
-              </div>
-            )}
-          </div>
-          <div className="flex-[2] min-h-0 border-t border-leather-border">
-            <NotesPanel day={day} />
-          </div>
-        </div>
       </div>
     </div>
   );
