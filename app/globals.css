@@ -388,3 +388,19 @@ body {
 
 .notes-editor ul ul { list-style-type: circle; }
 .notes-editor ul ul ul { list-style-type: square; }
+
+/* ═══════════════════════════════════════════════════════
+   RESIZABLE PANEL HANDLE
+   ═══════════════════════════════════════════════════════ */
+
+.resize-handle {
+  height: 4px;
+  background: var(--color-leather-border);
+  transition: background 0.2s ease;
+  cursor: row-resize;
+}
+
+.resize-handle:hover,
+.resize-handle[data-resize-handle-active] {
+  background: var(--color-leather-accent);
+}
