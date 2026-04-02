@@ -137,8 +137,9 @@ export default function DayView({ day }: DayViewProps) {
       <div className="h-screen flex flex-col bg-leather-bg">
         <div className="bg-leather-nav border-b border-leather-border h-12 animate-pulse" />
         <div className="flex-1 flex flex-col lg:flex-row">
-          <div className="lg:w-[70%] bg-leather-video animate-pulse aspect-video lg:aspect-auto" />
-          <div className="lg:w-[30%] bg-leather-text p-4 space-y-2">
+          <div className="lg:w-[25%] bg-leather-text animate-pulse" />
+          <div className="lg:w-[50%] bg-leather-video animate-pulse aspect-video lg:aspect-auto" />
+          <div className="lg:w-[25%] bg-leather-text p-4 space-y-2">
             {[75, 60, 85, 70, 90, 65, 80, 55, 72, 88].map((w, i) => (
               <div
                 key={i}
